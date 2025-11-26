@@ -11,7 +11,7 @@ export default function FoundersMessage({
   return (
     <section
       aria-label="Founder's message"
-      className="w-full py-6"
+      className="w-full p-2 py-6"
     >
       <div
         className=" rounded-2xl overflow-hidden p-6"

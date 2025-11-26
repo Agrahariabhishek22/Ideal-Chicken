@@ -45,7 +45,7 @@ export default function Footer() {
           {/* LEFT: logo + description + CTA */}
           <motion.div
             variants={itemFadeUp}
-            className="border-r-2 md:pr-6 border-[#F5F5F5] md:col-span-3"
+            className="mt-6 border-r-2 md:pr-6 border-[#F5F5F5] md:col-span-3"
           >
             <div className="flex items-start gap-4">
               <div className="w-28 h-20 flex items-center">
@@ -86,7 +86,7 @@ export default function Footer() {
           {/* MIDDLE: links columns */}
           <motion.div
             variants={itemFadeUp}
-            className="border-r-2 md:ml-5 border-[#F5F5F5] md:col-span-6 grid grid-cols-4 gap-10"
+            className="mt-6 border-r-2 md:ml-5 border-[#F5F5F5] md:col-span-6 grid grid-cols-4 gap-10"
           >
             {/* each column will also animate slightly in */}
             {[
@@ -154,7 +154,7 @@ export default function Footer() {
           </motion.div>
 
           {/* RIGHT: contact info */}
-          <motion.div variants={itemFadeUp} className="md:col-span-3 md:ml-5">
+          <motion.div variants={itemFadeUp} className="mt-6 md:col-span-3 md:ml-5">
             <h3 className="text-[15px] uppercase tracking-wider font-bold text-[#262626]">
               Get in touch
             </h3>
@@ -170,7 +170,7 @@ export default function Footer() {
                 <img
                   src="/src/assets/phone.png"
                   alt="phone"
-                  className="w-6 h-6"
+                  className=""
                 />
                 <div className="">
                   <div className="">(0824) 2230507</div>
@@ -184,7 +184,7 @@ export default function Footer() {
                 <img
                   src="/src/assets/mail.png"
                   alt="mail"
-                  className="w-6 h-6"
+                  className=""
                 />
                 <div className="">anupamafeeds@idealchicken.in</div>
               </motion.div>
@@ -196,7 +196,7 @@ export default function Footer() {
                 <img
                   src="/src/assets/location.png"
                   alt="location"
-                  className="w-6 h-6"
+                  className=""
                 />
                 <div className="">
                   Anupama Feeds and Farms

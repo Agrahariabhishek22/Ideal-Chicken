@@ -43,7 +43,7 @@ export default function PoultryEcosystem() {
   }
 
   return (
-    <section className="w-full py-12 overflow-hidden bg-white">
+    <section className="w-full p-6 py-12 overflow-hidden bg-white">
       <style>{`
         @keyframes scroll {
           0% { transform: translateX(0); }
