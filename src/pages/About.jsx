@@ -2,9 +2,14 @@ import React from 'react'
 import Hero from '../components/AboutComponents/Hero'
 import AboutSection from '../components/AboutComponents/AboutSection'
 import FoundersMessage from '../components/AboutComponents/FoundersMessage'
+import PoultryEcosystem from '../components/AboutComponents/PoultryEcosystem'
+import CompetitiveEdge from '../components/AboutComponents/CompetitiveEdge'
+import Footer from '../components/CommonComponents/Footer'
+import Journey from '../components/AboutComponents/Journey'
 
 const About = () => {
   return (
+    <>
      <div className="p-6">
       <Hero
         badge="About us"
@@ -13,8 +18,12 @@ const About = () => {
       />
       <AboutSection/>
       <FoundersMessage/>
-
+      <PoultryEcosystem/>
+      <CompetitiveEdge/>
+      <Journey/>
     </div>
+      <Footer/>
+      </>
   )
 }
 

@@ -85,8 +85,8 @@ export default function AboutSection({
         </div>
 
         {/* CENTER: Image */}
-        <div className="relative lg:col-span-1 flex items-start justify-center h-full">
-          <div className="absolute w-full max-w-md h-[460px]">
+        <div className="relative   lg:col-span-1 flex items-start justify-center h-[460px] ">
+          <div className="absolute   w-full max-w-md h-full mx-auto rounded-2xl overflow-hidden">
             <img
               src={imageUrl}
               alt="ideal chicken plate"
@@ -103,7 +103,7 @@ export default function AboutSection({
         </div>
 
         {/* RIGHT: stats + cards */}
-        <div className="relative lg:col-span-1 space-y-6">
+         <div className="relative  lg:col-span-1 space-y-6">
           <div className="grid grid-cols-2 gap-4">
             {stats.map((s, i) => (
               <div
@@ -117,7 +117,6 @@ export default function AboutSection({
                 }}
                 aria-hidden={false}
               >
-                {/* content positioned on top */}
                 <div className="absolute bottom-6 left-4 z-10  ">
                   <div className="text-sm font-bold text-[#A71077]">
                     {s.title}
@@ -142,7 +141,7 @@ export default function AboutSection({
               image={vision.image}
             />
           </div>
-        </div>
+        </div> 
       </div>
     </section>
   );
