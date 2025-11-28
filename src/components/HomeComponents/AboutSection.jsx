@@ -1,23 +1,16 @@
 import React from 'react';
-import { 
-  ArrowUpRight, 
-  Check, 
-  ShieldCheck, 
-  Warehouse, 
-  MapPin, 
-  Handshake 
-} from 'lucide-react';
+import { ArrowUpRight, Check } from 'lucide-react';
 
-// --- MOCK DATA: UPDATED WITH 7 LOGOS FROM IMAGE ---
-// Note: You need to save the individual logo images in your public folder
+// --- MOCK DATA: PARTNER LOGOS ---
+// Make sure these images exist in your public folder
 const PARTNER_LOGOS = [
-  { id: 1, src: "ideal-chicken-logo.png", alt: "Logoipsum Blue" },
-  { id: 2, src: "/partners/logo-red.png", alt: "Logoipsum Red" },
-  { id: 3, src: "/partners/logo-green.png", alt: "Logoipsum Green" },
-  { id: 4, src: "/partners/logo-orange.png", alt: "Logoipsum Orange" },
-  { id: 5, src: "/partners/logo-purple.png", alt: "Logoipsum Purple" },
-  { id: 6, src: "/partners/logo-grey.png", alt: "Logoipsum Grey" },
-  { id: 7, src: "/partners/logo-dark.png", alt: "Logoipsum Dark" },
+  { id: 1, src: "/ideal-chicken-logo.png", alt: "Ideal Chicken" },
+  { id: 2, src: "/partners/logo-red.png", alt: "Partner 2" },
+  { id: 3, src: "/partners/logo-green.png", alt: "Partner 3" },
+  { id: 4, src: "/partners/logo-orange.png", alt: "Partner 4" },
+  { id: 5, src: "/partners/logo-purple.png", alt: "Partner 5" },
+  { id: 6, src: "/partners/logo-grey.png", alt: "Partner 6" },
+  { id: 7, src: "/partners/logo-dark.png", alt: "Partner 7" },
 ];
 
 const ABOUT_DATA = {
@@ -33,28 +26,29 @@ const ABOUT_DATA = {
     link: "#"
   },
   mainImage: "/Rectangle_5.png", 
+  // --- UPDATED STATS WITH IMAGE PATHS ---
   stats: [
     {
-      id: 1,
-      icon: <ShieldCheck size={20} />,
-      title: "5+ Years",
+      id: 1, 
+      icon: "/logo1.png", // Replace with your actual icon image path
+      title: "5+ Years", 
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       id: 2,
-      icon: <Warehouse size={20} />,
+      icon: "/logo2.png", 
       title: "5 Verticals",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       id: 3,
-      icon: <MapPin size={20} />,
+      icon: "/logo1.png", 
       title: "20+ States",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       id: 4,
-      icon: <Handshake size={20} />,
+      icon: "/logo2.png", 
       title: "1,000+ Partners",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }
@@ -67,17 +61,17 @@ const AboutSection = () => {
       <div className="max-w-7xl mx-auto">
         
         {/* === INFINITE SCROLLING LOGO BAR === */}
-        <div className="w-full mb-20 border-b border-gray-300/50 pb-12 relative">
+        <div className="w-full mb-20 pb-12 relative">
           
           {/* Gradient Edges for smooth fade */}
-          <div className="absolute top-0 left-0 z-10 h-full w-24 bg-gradient-to-r from-[#eceff2] to-transparent pointer-events-none"></div>
-          <div className="absolute top-0 right-0 z-10 h-full w-24 bg-gradient-to-l from-[#eceff2] to-transparent pointer-events-none"></div>
+          <div className="absolute top-0 left-0 z-10 h-full w-24 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
+          <div className="absolute top-0 right-0 z-10 h-full w-24 bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
 
           <div className="flex w-full overflow-hidden group">
             {/* ANIMATION TRACK */}
             <div className="flex animate-marquee group-hover:[animation-play-state:paused] items-center">
               
-              {/* We render the list 3 times to ensure seamless looping on wide screens */}
+              {/* We render the list 3 times to ensure seamless looping */}
               {[...Array(3)].map((_, setIndex) => (
                 <div key={setIndex} className="flex gap-16 pr-16 shrink-0">
                   {PARTNER_LOGOS.map((logo) => (
@@ -85,23 +79,14 @@ const AboutSection = () => {
                       key={`${setIndex}-${logo.id}`} 
                       className="h-8 md:h-10 w-auto grayscale hover:grayscale-0 transition-all duration-500 opacity-60 hover:opacity-100 cursor-pointer flex items-center"
                     >
-                      {/* REPLACE THIS IMG TAG WITH YOUR ACTUAL IMAGE PATHS 
-                         If you don't have images yet, this will show broken image icons.
-                      */}
                       <img 
                         src={logo.src} 
                         alt={logo.alt} 
                         className="h-full w-auto object-contain"
-                        // Fallback for demo purposes if image not found
                         onError={(e) => {
                           e.target.style.display='none';
-                          e.target.nextSibling.style.display='flex';
                         }}
                       />
-                      {/* Fallback Placeholder Text if Image Fails */}
-                      <span className="hidden text-lg font-bold text-gray-400 whitespace-nowrap">
-                        {logo.alt}
-                      </span>
                     </div>
                   ))}
                 </div>
@@ -168,11 +153,19 @@ const AboutSection = () => {
               {ABOUT_DATA.stats.map((stat) => (
                 <div 
                   key={stat.id} 
-                  className="bg-white rounded-2xl p-6 flex flex-col gap-3 shadow-sm hover:shadow-md transition-shadow"
+                  className="  rounded-2xl p-6 flex flex-col gap-3 shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <div className="w-10 h-10 bg-[#A01E65] text-white rounded-lg flex items-center justify-center mb-1">
-                    {stat.icon}
+                  {/* --- UPDATED: ICON IMAGE --- */}
+                  <div className="w-16 h-16   p-2 rounded-lg flex items-center justify-center mb-1">
+                    <img 
+                      src={stat.icon} 
+                      alt={stat.title} 
+                      className="w-full h-full object-contain     " 
+                      // Note: 'brightness-0 invert' makes the image WHITE to match the previous icon style. 
+                      // Remove these classes if your logo is already colored.
+                    />
                   </div>
+                  
                   <h3 className="text-[#2D1B28] font-bold text-lg">
                     {stat.title}
                   </h3>
@@ -191,7 +184,7 @@ const AboutSection = () => {
       <style>{`
         @keyframes marquee {
           0% { transform: translateX(0); }
-          100% { transform: translateX(-33.33%); } /* Moves 1/3rd (one full set) */
+          100% { transform: translateX(-33.33%); }
         }
         .animate-marquee {
           display: flex;

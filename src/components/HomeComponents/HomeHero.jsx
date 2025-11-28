@@ -14,7 +14,7 @@ const HERO_DATA_MOCK = {
   },
   cards: {
     farmImage: {
-      src: "/Rectangle1.png",
+      src: "/Rectangle_2'2.png",
       badge: "Raised with care, delivered with trust."
     },
     customers: {
@@ -74,19 +74,19 @@ const HeroSection = () => {
   if (!data) return <div className="h-screen bg-white animate-pulse"></div>;
 
   return (
-    <section className="w-full bg-white py-6 px-4 font-sans flex justify-center">
-      <div className="w-full max-w-[1440px]">
+    <section className="w-full bg-white  py-6  px-12 font-sans flex justify-center">
+      <div className="w-full  ">
 
         {/* MAIN LAYOUT */}
         <motion.div 
-          className="flex flex-col lg:flex-row gap-4 items-start justify-center"
+          className="flex flex-col lg:flex-row gap-4 items-start justify-between "
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
           
           {/* LEFT COLUMN */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 ">
             
             {/* Hero Banner */}
             <motion.div 
@@ -174,7 +174,7 @@ const HeroSection = () => {
                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
                    />
                    <div className="absolute bottom-0 right-0 bg-[#FFF0F0] pl-4 pt-3 pr-2 pb-2 rounded-tl-[1.5rem]">
-                      <div className="flex flex-col text-[#9F2B6B] font-extrabold text-[14px] leading-[1.15]">
+                      <div className="flex flex-col text-[#9F2B6B] font-bold text-[14px] leading-[1.15]">
                           {data.cards.customers.tagline.map((line, i) => (
                               <span key={i}>{line}</span>
                           ))}
@@ -189,7 +189,7 @@ const HeroSection = () => {
           {/* RIGHT CARD */}
           <motion.div 
             variants={cardVariants}
-            className="w-full lg:w-[680px] h-[500px] lg:h-[737px] relative rounded-[2.5rem] overflow-hidden shadow-2xl group"
+            className="w-full lg:w-[680px] h-[500px]   lg:h-[737px] relative rounded-[2.5rem] overflow-hidden shadow-2xl group"
           >
             <img
               src={data.cards.featureDish.src}

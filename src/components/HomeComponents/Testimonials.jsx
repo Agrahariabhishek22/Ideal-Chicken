@@ -93,10 +93,10 @@ const TestimonialsSection = () => {
           <span className="bg-[#FFE4B5] text-[#2D1B28] px-6 py-2 rounded-full text-sm font-bold tracking-wide shadow-sm">
             Testimonials
           </span>
-          <h2 className="text-[#4A0E34] text-3xl md:text-5xl font-bold tracking-tight">
+          <h2 className="text-[#4A0E34] text-2xl md:text-4xl font-bold tracking-tight">
             Trusted by Leading Poultry Businesses
           </h2>
-          <p className="text-gray-500 max-w-2xl text-base md:text-lg leading-relaxed">
+          <p className="text-gray-500   lg:w-[580px] text-base md:text-lg leading-relaxed">
             Lorem ipsum dolor sit amet consectetur. Senectus luctus a urna sed in viverra mauris enim.
           </p>
         </div>

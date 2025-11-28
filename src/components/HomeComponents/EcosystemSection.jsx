@@ -103,16 +103,16 @@ const Card = ({ item }) => {
   return (
     // UPDATED WIDTH: w-[256px] fixed based on Figma
     // UPDATED GAP: gap-6 (24px) based on Figma
-    <div className="w-[256px] shrink-0 flex flex-col gap-6 select-none">
+    <div className="w-[280px] shrink-0 flex flex-col gap-6 select-none">
       
       {/* Image with Pink Border Frame */}
       {/* Assuming visual style stays same, just dimensions changed */}
-      <div className="bg-[#FCE7F3] p-2 rounded-[2rem] overflow-hidden">
-        <div className="h-[220px] w-full rounded-[1.5rem] overflow-hidden relative">
+      <div className="bg-[#FCE7F3] p-2 rounded-[1.5rem] overflow-hidden">
+        <div className="h-[220px] w-[260px] rounded-[1.5rem] overflow-hidden relative">
           <img 
             src={item.image} 
             alt={item.title} 
-            className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+            className="w-full h-full  object-cover hover:scale-110 transition-transform duration-700"
           />
         </div>
       </div>
