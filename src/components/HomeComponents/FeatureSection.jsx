@@ -55,9 +55,9 @@ const itemVariants = {
 
 const FeatureSection = () => {
   return (
-    <section className="py-16 px-4 flex justify-center bg-white">
+    <section className="py-0 px-0 flex   justify-center bg-white">
       <motion.div
-        className="bg-[#FFF8F0] rounded-[32px] p-12 w-full max-w-[1440px] flex flex-col md:flex-row justify-between items-start divide-y md:divide-y-0 md:divide-x divide-gray-200"
+        className="bg-[#FDF1E9] border border-[#FBDEC9] rounded-[32px]   w-full max-w-[1440px] flex flex-col md:flex-row justify-between items-start divide-y md:divide-y-0 md:divide-x divide-[#FBDEC9]"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -80,7 +80,7 @@ const FeatureSection = () => {
               variants={itemVariants}
             >
               <motion.div
-                className="w-20 h-20 bg-[#B52A63] rounded-2xl flex items-center justify-center shadow-sm shrink-0"
+                className="w-20 h-20 bg-[#A71077] rounded-2xl flex items-center justify-center shadow-sm shrink-0"
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
@@ -93,10 +93,10 @@ const FeatureSection = () => {
               </motion.div>
               
               <div className="flex flex-col gap-3">
-                <h3 className="text-[#4A0E34] font-bold text-xl leading-tight">
+                <h3 className="text-[#5F0944] font-bold text-xl leading-tight">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-[#595959] text-sm leading-relaxed font-medium">
                   {feature.description}
                 </p>
               </div>

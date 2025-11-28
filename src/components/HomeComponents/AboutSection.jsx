@@ -57,11 +57,11 @@ const ABOUT_DATA = {
 
 const AboutSection = () => {
   return (
-    <section className="w-full bg-white py-12 px-4 md:px-8 lg:px-12 font-sans overflow-hidden">
+    <section className="w-full bg-white py-8 px-4 mb-8 md:px-8 lg:px-12 font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
         {/* === INFINITE SCROLLING LOGO BAR === */}
-        <div className="w-full mb-20 pb-12 relative">
+        <div className="w-full mb-20 pb-3 relative">
           
           {/* Gradient Edges for smooth fade */}
           <div className="absolute top-0 left-0 z-10 h-full w-24 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
@@ -97,12 +97,12 @@ const AboutSection = () => {
         </div>
 
         {/* === EXISTING CONTENT: ABOUT US GRID === */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-8">
           
           {/* === COLUMN 1: TEXT CONTENT (Span 4) === */}
           <div className="lg:col-span-4 flex flex-col lg:h-[492px] lg:w-[437px] items-start gap-6">
             
-            <span className="bg-[#FFE4B5] text-[#8B4513] px-4 py-1.5 rounded-full text-sm font-bold tracking-wide">
+            <span className="bg-[#FEE2AF] text-[#262626] border border-[#FDD48A] px-4 py-1.5 rounded-full text-sm font-bold tracking-wide">
               {ABOUT_DATA.badge}
             </span>
 

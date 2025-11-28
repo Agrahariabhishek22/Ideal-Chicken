@@ -85,12 +85,12 @@ const TestimonialsSection = () => {
   const isNextDisabled = currentIndex >= TESTIMONIALS.length - itemsPerPage;
 
   return (
-    <section className="w-full bg-white py-20 px-4 md:px-8 font-sans overflow-hidden">
+    <section className="w-full bg-white py-10 px-4 md:px-8 font-sans overflow-hidden">
       <div className="max-w-[1480px] mx-auto">
         
         {/* --- HEADER --- */}
         <div className="flex flex-col items-center text-center mb-16 space-y-5">
-          <span className="bg-[#FFE4B5] text-[#2D1B28] px-6 py-2 rounded-full text-sm font-bold tracking-wide shadow-sm">
+          <span className="bg-[#FFE4B5] border border-[#FDD48A] text-[#2D1B28] px-6 py-2 rounded-full text-sm font-bold tracking-wide shadow-sm">
             Testimonials
           </span>
           <h2 className="text-[#4A0E34] text-2xl md:text-4xl font-bold tracking-tight">
@@ -111,7 +111,7 @@ const TestimonialsSection = () => {
             className={`absolute -left-2 xl:-left-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 xl:w-14 xl:h-14 rounded-full flex items-center justify-center shadow-lg transition-all duration-300
               ${isPrevDisabled 
                 ? "bg-gray-100 text-gray-400 cursor-not-allowed" 
-                : "bg-[#B52A63] text-white hover:bg-[#8B1E45] hover:scale-110 cursor-pointer"
+                : "bg-[#A71077] text-white hover:bg-[#8B1E45] hover:scale-110 cursor-pointer"
               }`}
           >
             <ChevronLeft size={28} strokeWidth={2.5} />
@@ -124,7 +124,7 @@ const TestimonialsSection = () => {
             className={`absolute -right-2 xl:-right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 xl:w-14 xl:h-14 rounded-full flex items-center justify-center shadow-lg transition-all duration-300
               ${isNextDisabled 
                 ? "bg-gray-100 text-gray-400 cursor-not-allowed" 
-                : "bg-[#B52A63] text-white hover:bg-[#8B1E45] hover:scale-110 cursor-pointer"
+                : "bg-[#A71077] text-white hover:bg-[#8B1E45] hover:scale-110 cursor-pointer"
               }`}
           >
             <ChevronRight size={28} strokeWidth={2.5} />
@@ -146,7 +146,7 @@ const TestimonialsSection = () => {
                     - Changed min-h-[400px] to min-h-[480px] to match taller aspect ratio.
                     - h-full ensures it stretches within its flex container.
                   */}
-                  <div className="bg-white border border-pink-200 rounded-[2.5rem] p-8 flex flex-col h-full w-full hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1 lg:w-[326px] lg:h-[362px]">
+                  <div className="bg-white border border-[#C868A9] rounded-[2.5rem] p-8 flex flex-col h-full w-full hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1 lg:w-[326px] lg:h-[362px]">
                     
                     {/* UPDATED ICON: Replaced lucide icon with the new image asset */}
                     <div className="mb-6">
@@ -163,7 +163,7 @@ const TestimonialsSection = () => {
                     </p>
 
                     {/* Divider */}
-                    <div className="w-full h-px bg-gray-100 mb-6 group-hover:bg-pink-50 transition-colors"></div>
+                    <div className="w-full h-px border border-[#F0F0F0] mb-6 group-hover:bg-pink-50 transition-colors"></div>
 
                     {/* Footer */}
                     <div className="flex items-center gap-4 mt-auto">
@@ -171,13 +171,13 @@ const TestimonialsSection = () => {
                         <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
                       </div>
                       <div className="flex flex-col">
-                        <h4 className="text-[#B52A63] font-bold text-lg leading-none">
+                        <h4 className="text-[#8E0E65] font-bold text-lg leading-none">
                           {item.name}
                         </h4>
-                        <span className="text-gray-500 text-xs mt-1 font-medium">
+                        <span className="text-[#6E6E6E] text-xs mt-1 font-medium">
                           {item.role}
                         </span>
-                        <span className="text-[#B52A63] text-[10px] font-bold tracking-widest mt-0.5 uppercase">
+                        <span className="text-[#C868A9] text-[10px] font-bold tracking-widest mt-0.5 uppercase">
                           {item.company}
                         </span>
                       </div>

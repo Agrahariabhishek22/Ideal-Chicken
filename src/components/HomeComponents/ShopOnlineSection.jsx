@@ -2,7 +2,7 @@ import React from 'react';
 import { Phone, Check } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-// Animation variants for a smooth entry
+// Animation variants
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -24,39 +24,50 @@ const itemVariants = {
   },
 };
 
-// Mock data based on the design
+const COLORS = {
+  violet1: '#FCE7F3',
+  violet6: '#A01E65',
+  black10: '#2D1B28',
+  black11: '#1F2937',
+  badgeBg: '#FFE4B5',
+};
+
+// --- MOCK DATA UPDATED ---
 const SHOP_DATA = {
   badge: "Shop Online",
-  title: "Fresh Chicken at Your Fingertips",
+  title: (<>
+  Fresh Chicken at <br /> Your Fingertips
+  </>),
+   
   features: [
     "Premium Quality Chicken",
     "Delivered Super Fresh",
   ],
-  ctaTitle: "Your trusted poultry brand, now closer than ever.",
-  ctaDesc: "Find fresh chicken, eggs, and more at our outlets or order via the Ideal Chicken app.",
+  // Yahan aap <br /> laga kar line break control kar sakte hain
+  ctaTitle: (
+    <>
+      Your trusted poultry brand, <br   /> 
+      now closer than ever.
+    </>
+  ),
+  ctaDesc: (
+    <>
+      Find fresh chicken, eggs, and more at our <br className="hidden lg:block" /> 
+      outlets or order via the Ideal Chicken app.
+    </>
+  ),
   playStoreLink: "#",
   phoneNumber: "(0824) 2230507",
-  // Replace these with your actual image paths
   phoneImage: "/down1.png",
   deliveryImage: "/boy.png",
   playStoreBtn: "/googleplay.png",
 };
 
-// Color constants from Figma selection
-const COLORS = {
-  violet1: '#FCE7F3', // Light pink background
-  violet6: '#A01E65', // Check icon background, CTA line
-  black10: '#2D1B28', // Dark text
-  black11: '#1F2937', // Slightly lighter dark text
-  badgeBg: '#FFE4B5', // Badge background
-};
-
 const ShopOnlineSection = () => {
   return (
-    // Section padding and background color based on design
-    <section className="w-full bg-white py-16 px-4 md:px-8 flex justify-center">
+    <section className="w-full  bg-white py-8 md:px-4 flex justify-center">
       <motion.div
-        className="w-full max-w-[1440px] bg-violet-50 rounded-[32px] p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-16 shadow-sm"
+        className="w-full max-w-[1440px] lg:h-[510px] bg-[#FFF2FB] border border-[#F6E7F1] rounded-[32px] p-8  flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12 shadow-sm"
         style={{ backgroundColor: COLORS.violet1 }}
         variants={containerVariants}
         initial="hidden"
@@ -70,7 +81,7 @@ const ShopOnlineSection = () => {
         >
           {/* Badge */}
           <span
-            className="px-6 py-2 rounded-full text-sm font-bold tracking-wide shadow-sm"
+            className="px-6 py-2 border border-[#FDD48A] lg:mt-15 rounded-full text-sm font-bold tracking-wide shadow-sm"
             style={{ backgroundColor: COLORS.badgeBg, color: COLORS.black10 }}
           >
             {SHOP_DATA.badge}
@@ -125,26 +136,24 @@ const ShopOnlineSection = () => {
 
         {/* --- COL 3: DELIVERY PARTNER IMAGE --- */}
         <motion.div
-          className="flex-1 max-w-sm lg:max-w-none"
+          className="flex-1 max-w-sm -ml-6 lg:max-w-none"
           variants={itemVariants}
         >
-          <div className="rounded-[1rem] lg:mr-4.5 overflow-hidden    bg-[#f8af7b]">
-            <img
-              src={SHOP_DATA.deliveryImage}
-              alt="Delivery Partner"
-              className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 mix-blend-multiply"
-            />
-          </div>
+          <img
+            src={SHOP_DATA.deliveryImage}
+            alt="Delivery Partner"
+            className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500 mix-blend-multiply"
+          />
         </motion.div>
 
         {/* --- COL 4: RIGHT CTA CONTENT --- */}
         <motion.div
-          className="flex-1 flex flex-col items-start gap-8 max-w-md lg:pl-4"
+          className="flex-1 flex flex-col items-star mt-7 gap-4 max-w-md "
           variants={itemVariants}
         >
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-0">
             <h3
-              className="text-2xl md:text-3xl font-bold leading-tight"
+              className="text-2xl md:text-2xl  font-bold leading-tight"
               style={{ color: COLORS.black10 }}
             >
               {SHOP_DATA.ctaTitle}
@@ -171,21 +180,27 @@ const ShopOnlineSection = () => {
             />
           </motion.a>
 
-          {/* Call CTA */}
-          <div className="flex flex-col gap-2 w-full">
-            <div className="flex items-center gap-4">
-              <div
-                className="h-0.5 w-12"
-                style={{ backgroundColor: COLORS.violet6 }}
-              ></div>
-              <span
+          {/* Call CTA - UPDATED STRUCTURE */}
+          <div className="flex flex-col gap-2 w-full mt-2">
+            
+            {/* Label aur Bar Container */}
+            <div className="flex flex-col items-start gap-1">
+               <span
                 className="font-bold text-sm tracking-widest uppercase"
                 style={{ color: COLORS.black10 }}
               >
                 OR GIVE US A CALL
               </span>
+              
+              {/* Purple Bar ab neeche hai */}
+              <div
+                className="h-1 w-12 rounded-full"
+                style={{ backgroundColor: COLORS.violet6 }}
+              ></div>
             </div>
-            <div className="flex items-center gap-3">
+
+            {/* Phone Number */}
+            <div className="flex items-center gap-3 mt-1">
               <Phone size={24} style={{ color: COLORS.violet6 }} />
               <span
                 className="text-xl font-bold"

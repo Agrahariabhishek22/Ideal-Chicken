@@ -14,7 +14,7 @@ const HERO_DATA_MOCK = {
   },
   cards: {
     farmImage: {
-      src: "/Rectangle_2'2.png",
+      src: "/Block2.png",
       badge: "Raised with care, delivered with trust."
     },
     customers: {
@@ -71,22 +71,22 @@ const HeroSection = () => {
     setData(HERO_DATA_MOCK);
   }, []);
 
-  if (!data) return <div className="h-screen bg-white animate-pulse"></div>;
+  if (!data) return <div className="h-screen bg-[#FEFEFE] animate-pulse"></div>;
 
   return (
-    <section className="w-full bg-white  py-6  px-12 font-sans flex justify-center">
-      <div className="w-full  ">
+    <section className="w-full bg-[#FEFEFE] py-6 px-12 font-sans flex justify-center">
+      <div className="w-full">
 
-        {/* MAIN LAYOUT */}
+        {/* MAIN LAYOUT - Gap reduced from gap-4 to gap-3 */}
         <motion.div 
-          className="flex flex-col lg:flex-row gap-4 items-start justify-between "
+          className="flex flex-col lg:flex-row gap-5 items-start"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
           
-          {/* LEFT COLUMN */}
-          <div className="flex flex-col gap-4 ">
+          {/* LEFT COLUMN - Gap reduced from gap-4 to gap-3 */}
+          <div className="flex flex-col gap-5">
             
             {/* Hero Banner */}
             <motion.div 
@@ -94,7 +94,7 @@ const HeroSection = () => {
               className="w-full lg:w-[700px] h-[500px] lg:h-[415px] relative overflow-hidden rounded-[1.5rem] bg-[#FFF5F9] flex flex-col items-center text-center shadow-xl group z-0"
             >
               <div className="relative z-20 flex flex-col items-center justify-center h-full w-full px-6 py-8">
-                <span className="inline-block bg-white text-[#A01E65] px-4 py-1.5 rounded-full text-[10px] md:text-xs font-bold tracking-wider mb-4 shadow-sm border border-pink-100">
+                <span className="inline-block bg-[#FEFEFE] text-[#A01E65] px-4 py-1.5 rounded-full text-[10px] md:text-xs font-bold tracking-wider mb-4 shadow-sm border border-pink-100">
                   {data.heroBanner.tag}
                 </span>
 
@@ -109,10 +109,10 @@ const HeroSection = () => {
                 <motion.button 
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-white text-[#A01E65] pl-6 pr-1.5 py-1.5 rounded-full font-extrabold text-sm md:text-base flex items-center gap-3 shadow-lg border border-pink-50 group/btn z-30"
+                  className="bg-[#FEFEFE] text-[#A01E65] pl-6 pr-1.5 py-1.5 rounded-full font-extrabold text-sm md:text-base flex items-center gap-3 shadow-lg border border-pink-50 group/btn z-30"
                 >
                   {data.heroBanner.ctaText}
-                  <span className="bg-[#B52A63] rounded-full p-2 text-white transition-transform duration-300 group-hover/btn:rotate-45">
+                  <span className="bg-[#B52A63] rounded-full p-2 text-[#FEFEFE] transition-transform duration-300 group-hover/btn:rotate-45">
                     <ArrowUpRight size={18} strokeWidth={2.5} />
                   </span> 
                 </motion.button>
@@ -127,8 +127,8 @@ const HeroSection = () => {
               </div>
             </motion.div>
 
-            {/* Bottom Row */}
-            <div className="flex flex-col md:flex-row gap-4">
+            {/* Bottom Row - Gap reduced from gap-4 to gap-3 */}
+            <div className="flex flex-col md:flex-row gap-5">
               
               {/* Farm Card */}
               <motion.div 
@@ -140,7 +140,7 @@ const HeroSection = () => {
                   alt="Farm"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute bottom-4 left-4 bg-[#333]/80 backdrop-blur-md text-white px-3 py-2 rounded-full text-[10px] font-semibold flex items-center gap-2">
+                <div className="absolute bottom-4 left-4 bg-[#535353]/82 text-[#FEFEFE] px-3 py-2 rounded-md text-[14px] font-semibold flex items-center gap-2">
                   <div className="w-2 h-2 bg-[#84CC16] rounded-full animate-pulse"></div>
                   {data.cards.farmImage.badge}
                 </div>
@@ -149,7 +149,7 @@ const HeroSection = () => {
               {/* Customers Card */}
               <motion.div 
                 variants={cardVariants}
-                className="w-full lg:w-[298px] h-[250px] lg:h-[298px] bg-[#FFF0F0] rounded-[1.5rem] p-4 flex flex-col shadow-sm relative overflow-hidden border border-red-50/50"
+                className="w-full lg:w-[298px] h-[250px] lg:h-[298px] bg-[#FDF1E9] rounded-[1.5rem] p-4 flex flex-col shadow-sm relative overflow-hidden border border-[#FBDEC9]"
               >
                 <div className="flex flex-col gap-1 z-10">
                    <div className="flex items-center -space-x-3">
@@ -158,11 +158,11 @@ const HeroSection = () => {
                           <img src={av} alt="user" className="w-full h-full object-cover" />
                         </div>
                       ))}
-                      <div className="w-12 h-12 rounded-full bg-[#ec64a8] border-[3px] border-[#FFF0F0] flex items-center justify-center text-[10px] font-bold text-white z-10">
+                      <div className="w-12 h-12 rounded-full bg-[#A71077] border-[3px] border-[#FFF0F0] flex items-center justify-center text-[10px] font-bold text-[#FEFEFE] z-10">
                           {data.cards.customers.count}
                       </div>
                    </div>
-                   <h3 className="text-[#9F2B6B] font-bold text-sm ml-1 leading-none mt-1">
+                   <h3 className="text-[#A71077] font-semibold text-base ml-1 mb-2 leading-none mt-1">
                        {data.cards.customers.label}
                    </h3>
                 </div>
@@ -173,8 +173,8 @@ const HeroSection = () => {
                        alt="Raw Chicken" 
                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
                    />
-                   <div className="absolute bottom-0 right-0 bg-[#FFF0F0] pl-4 pt-3 pr-2 pb-2 rounded-tl-[1.5rem]">
-                      <div className="flex flex-col text-[#9F2B6B] font-bold text-[14px] leading-[1.15]">
+                   <div className="absolute bottom-4 right-8 bg-[#FFF0F0]  rounded-tl-[1.5rem]">
+                      <div className="flex flex-col text-[#A71077] font-bold text-[14px] leading-[1.15]">
                           {data.cards.customers.tagline.map((line, i) => (
                               <span key={i}>{line}</span>
                           ))}
@@ -189,7 +189,7 @@ const HeroSection = () => {
           {/* RIGHT CARD */}
           <motion.div 
             variants={cardVariants}
-            className="w-full lg:w-[680px] h-[500px]   lg:h-[737px] relative rounded-[2.5rem] overflow-hidden shadow-2xl group"
+            className="w-full lg:w-[680px] h-[500px] lg:h-[737px] relative rounded-[2.5rem] overflow-hidden shadow-2xl group"
           >
             <img
               src={data.cards.featureDish.src}

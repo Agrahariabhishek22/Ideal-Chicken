@@ -42,7 +42,7 @@ const EcosystemSection = () => {
         
         {/* --- HEADER --- */}
         <div className="flex flex-col items-center gap-4">
-          <span className="bg-[#FFE4B5] text-[#2D1B28] px-6 py-2 rounded-full text-sm font-bold tracking-wide shadow-sm">
+          <span className="bg-[#FFE4B5] border border-[#FDD48A] text-[#2D1B28] px-6 py-2 rounded-full text-sm font-bold tracking-wide shadow-sm">
             Business Verticals
           </span>
           <h2 className="text-[#4A0E34] text-3xl md:text-5xl font-bold tracking-tight">
@@ -119,7 +119,7 @@ const Card = ({ item }) => {
 
       {/* Text Content */}
       <div className="px-2">
-        <h3 className="text-[#8B1E45] font-bold text-2xl mb-2">
+        <h3 className="text-[#770B54] font-bold text-2xl mb-2">
           {item.title}
         </h3>
         <p className="text-gray-500 text-sm leading-relaxed mb-4">
@@ -128,7 +128,7 @@ const Card = ({ item }) => {
         
         {/* Arrow Button */}
         <button className="w-12 h-12 bg-[#FCE7F3] rounded-full flex items-center justify-center hover:bg-[#F9A8D4] transition-colors group/btn cursor-pointer">
-          <ArrowUpRight className="text-[#8B1E45] transition-transform duration-300 group-hover/btn:rotate-45" size={24} />
+          <ArrowUpRight className="text-[#262626] transition-transform duration-300 group-hover/btn:rotate-45" size={24} />
         </button>
       </div>
     </div>
