@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './components/CommonComponets/Navbar'
 import HomeHero from './components/HomeComponents/HomeHero'
 import HomePage from './pages/HomePage'
+import Footer from './components/CommonComponets/Footer'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -15,7 +16,7 @@ function App() {
     <Route path='/' element={<HomePage/>} />
     </Routes>
     </BrowserRouter>
-       
+       <Footer/>
     </>
   )
 }
