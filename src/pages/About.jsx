@@ -7,10 +7,12 @@ import CompetitiveEdge from '../components/AboutComponents/CompetitiveEdge'
 import Footer from '../components/CommonComponents/Footer'
 import Journey from '../components/AboutComponents/Journey'
 import QualityBanner from '../components/AboutComponents/QualityBanner'
+import Navbar from '../components/CommonComponents/Navbar'
 
 const About = () => {
   return (
     <>
+    <Navbar/>
      <div >
       <div className='p-6'>
         <Hero

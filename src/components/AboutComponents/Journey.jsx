@@ -182,7 +182,7 @@ const Journey = () => {
                       {item.title}
                     </h3>
                     <p className="text-[#454545] text-sm leading-relaxed line-clamp-4 font-medium">
-                      {item.description.substring(0,40)+"...."}
+                      {item.description.substring(0,30)+"...."}
                     </p>
                   </div>
                 </div>
