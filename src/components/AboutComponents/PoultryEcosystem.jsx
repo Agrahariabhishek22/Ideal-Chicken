@@ -43,7 +43,7 @@ export default function PoultryEcosystem() {
   }
 
   return (
-    <section className="w-full p-6 py-12 overflow-hidden bg-white">
+    <section className="w-full p-6 py-8 overflow-hidden bg-white">
       <style>{`
         @keyframes scroll {
           0% { transform: translateX(0); }
@@ -60,7 +60,7 @@ export default function PoultryEcosystem() {
       <div className="max-w-7xl mx-auto px-6 mb-8">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div>
-            <span className="inline-block bg-[#FEE2AF] border border-[#FDD48A] text-[#262626] px-3 py-1 rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-default">
+            <span className="inline-block bg-[#FEE2AF] border border-[#FDD48A] text-[#262626] px-3 py-1 rounded-full text-sm font-bold hover:scale-105 transition-transform cursor-default">
               Business Verticals
             </span>
 
@@ -69,9 +69,11 @@ export default function PoultryEcosystem() {
             </h2>
           </div>
           
-          <p className="hidden md:block font-medium text-sm text-[#595959] max-w-md text-right">
+          <div>
+            <p className="hidden md:block font-medium text-sm text-[#595959] max-w-md text-right">
             From breeding to processing, we ensure quality at every single step of the journey.
           </p>
+          </div>
         </div>
       </div>
 

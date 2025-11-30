@@ -34,8 +34,8 @@ const itemFadeUp = {
 
 export default function Footer() {
   return (
-    <footer className="border-t-2 border-[#F5F5F5] text-gray-300">
-      <div className="w-full mx-auto px-6 lg:px-8 py-12 max-w-7xl">
+    <footer className="relative border-t-2 border-[#F5F5F5] text-gray-300 ">
+      <div className="w-full mx-auto px-6 lg:px-8 py-2 ">
         <motion.div
           className="grid grid-cols-1 md:grid-cols-12 gap-1 space-x-2"
           initial="hidden"
@@ -45,10 +45,10 @@ export default function Footer() {
           {/* LEFT: logo + description + CTA */}
           <motion.div
             variants={itemFadeUp}
-            className="mt-6 border-r-2 md:pr-6 border-[#F5F5F5] md:col-span-3"
+            className="mt-6 md:border-r-2 border-[#F5F5F5] w-full flex flex-col items-center md:items-start justify-center md:justify-start md:pr-6  md:col-span-3"
           >
-            <div className="flex items-start gap-4">
-              <div className="w-28 h-20 flex items-center">
+            <div className="flex items-start justify-center md:justify-start gap-4">
+              <div className="w-28 h-20 flex items-center justify-center">
                 <img
                   src="/src/assets/Ideal Chicken Logo.png"
                   alt="Ideal Chicken Logo"
@@ -75,7 +75,7 @@ export default function Footer() {
                 boxShadow: "0 6px 20px rgba(167,16,119,0.12)",
               }}
               whileTap={{ scale: 0.99 }}
-              className="mt-8 h-[50px] inline-flex items-center gap-3 bg-[#262626] hover:bg-[#2f2f2f] focus:outline-none focus:ring-2 focus:ring-pink-600 rounded-full px-6 py-3 text-[#FEFEFE] font-bold text-[16px] shadow-sm"
+              className=" border  mt-8 h-[50px] inline-flex items-center justify-center md:justify-start gap-3 bg-[#262626] hover:bg-[#2f2f2f] focus:outline-none focus:ring-2 focus:ring-pink-600 rounded-full px-6 py-3 text-[#FEFEFE] font-bold text-[16px] shadow-sm"
               aria-label="Explore our products"
             >
               <span>Explore Our Products</span>
@@ -86,7 +86,7 @@ export default function Footer() {
           {/* MIDDLE: links columns */}
           <motion.div
             variants={itemFadeUp}
-            className="mt-6 border-r-2 md:ml-5 border-[#F5F5F5] md:col-span-6 grid grid-cols-4 gap-10"
+            className="mt-6 md:border-r-2 md:ml-5 border-[#F5F5F5] md:col-span-6 grid grid-cols-4 gap-10"
           >
             {/* each column will also animate slightly in */}
             {[
@@ -154,7 +154,10 @@ export default function Footer() {
           </motion.div>
 
           {/* RIGHT: contact info */}
-          <motion.div variants={itemFadeUp} className="mt-6 md:col-span-3 md:ml-5">
+          <motion.div
+            variants={itemFadeUp}
+            className="mt-6 md:col-span-3 md:ml-5"
+          >
             <h3 className="text-[15px] uppercase tracking-wider font-bold text-[#262626]">
               Get in touch
             </h3>
@@ -167,11 +170,7 @@ export default function Footer() {
                 className="flex items-start gap-3"
                 whileHover={{ x: 4 }}
               >
-                <img
-                  src="/src/assets/phone.png"
-                  alt="phone"
-                  className=""
-                />
+                <img src="/src/assets/phone.png" alt="phone" className="" />
                 <div className="">
                   <div className="">(0824) 2230507</div>
                 </div>
@@ -181,11 +180,7 @@ export default function Footer() {
                 className="flex items-start gap-3"
                 whileHover={{ x: 4 }}
               >
-                <img
-                  src="/src/assets/mail.png"
-                  alt="mail"
-                  className=""
-                />
+                <img src="/src/assets/mail.png" alt="mail" className="" />
                 <div className="">anupamafeeds@idealchicken.in</div>
               </motion.div>
 
@@ -196,7 +191,7 @@ export default function Footer() {
                 <img
                   src="/src/assets/location.png"
                   alt="location"
-                  className=""
+                  className="mt-2"
                 />
                 <div className="">
                   Anupama Feeds and Farms
@@ -205,15 +200,24 @@ export default function Footer() {
                 </div>
               </motion.div>
 
-              <motion.div className="mt-20" variants={itemFadeUp}>
-                <a href="#">
-                  <img
-                    src="/src/assets/google play.png"
-                    alt="Get it on Google Play"
-                    className="h-10 transform transition-transform duration-200 hover:scale-105"
-                  />
-                </a>
-              </motion.div>
+              <div className="w-full h-full">
+                <div className="mt-16" variants={itemFadeUp}>
+                  <a href="#" className="flex justify-center ">
+                    <div className="items-center flex justify-center">
+                      <img
+                        src="/src/assets/ios store.png"
+                        alt="Get it on Google Play"
+                        className="h-10 transform transition-transform duration-200 hover:scale-105"
+                      />
+                      <img
+                        src="/src/assets/playstore.png"
+                        alt="Get it on Google Play"
+                        className="h-14 transform transition-transform duration-200 hover:scale-105"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </motion.div>
         </motion.div>
@@ -223,9 +227,9 @@ export default function Footer() {
           initial={{ opacity: 0, y: 6 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.18 }}
-          className="mt-10 border-t border-[#F5F5F5] pt-6"
+          className="mt-10 border-t border-[#F5F5F5] pt-4"
         >
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className=" flex flex-col md:flex-row items-center justify-between gap-1">
             <div className="text-sm font-medium text-[#454545]">
               Copyright © 2015 Ideal Chicken.
             </div>

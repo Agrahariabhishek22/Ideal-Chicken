@@ -30,7 +30,7 @@ const Journey = () => {
       year: "2005",
       title: "Feed Factory Est.",
       description: "Feed Factory established at Alangar, Moodbidri",
-      icon: <Sprout className="w-6 h-6 text-white" />,
+      icon: <img src="/src/assets/Vector (2).png" alt="" />,
       theme: "pink",
       iconBg: "bg-[#A71077]",
     },
@@ -38,15 +38,15 @@ const Journey = () => {
       year: "2005",
       title: "First Retail Store",
       description: "First Retail Store opens at Kulshekar Kaikamba",
-      icon: <Store className="w-6 h-6 text-white" />,
+      icon: <img src="/src/assets/Vector (3).png" alt="" />,
       theme: "peach",
-      iconBg: "bg-[#5B0F3F]",
+      iconBg: "bg-[#770B54]",
     },
     {
       year: "2008",
       title: "Sales Offices",
       description: "Sales offices established at Puthige and Kulshekar",
-      icon: <Building2 className="w-6 h-6 text-white" />,
+      icon: <img src="/src/assets/Vector (4).png" alt="" />,
       theme: "pink",
       iconBg: "bg-[#A71077]",
     },
@@ -54,15 +54,15 @@ const Journey = () => {
       year: "2011",
       title: "Ideal Hatchery",
       description: "Ideal Hatchery begins operations at Shirthady",
-      icon: <Egg className="w-6 h-6 text-white" />,
+      icon: <img src="/src/assets/Vector (5).png" alt="" />,
       theme: "peach",
-      iconBg: "bg-[#5B0F3F]",
+      iconBg: "bg-[#770B54]",
     },
     {
       year: "2013",
       title: "Admin Office",
       description: "Administrative Office set up at Kalpane, Kulshekar",
-      icon: <Home className="w-6 h-6 text-white" />,
+      icon: <img src="/src/assets/Vector (4).png" alt="" />,
       theme: "pink",
       iconBg: "bg-[#A71077]",
     },
@@ -70,9 +70,9 @@ const Journey = () => {
       year: "2013",
       title: "Dressed Chicken",
       description: "Dressed chicken unit commissioned at Yedapadavu",
-      icon: <Bookmark className="w-6 h-6 text-white" />,
+      icon: <img src="/src/assets/Vector (6).png" alt="" />,
       theme: "peach",
-      iconBg: "bg-[#5B0F3F]",
+      iconBg: "bg-[#770B54]",
     },
     // Extra dummy data added to show the scrolling effect properly
     {
@@ -89,12 +89,12 @@ const Journey = () => {
       description: "Started exporting premium cuts to Middle East",
       icon: <Flag className="w-6 h-6 text-white" />,
       theme: "peach",
-      iconBg: "bg-[#5B0F3F]",
+      iconBg: "bg-[#770B54]",
     },
   ];
 
   return (
-    <section className="w-full py-16 px-4 md:pl-8 bg-white overflow-hidden">
+    <section className="w-full py-8 px-4 md:pl-8 bg-white overflow-hidden">
       <div className="max-w-[1440px] mx-auto">
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
@@ -112,7 +112,7 @@ const Journey = () => {
           </div>
 
           <div className="flex flex-col items-end gap-6">
-            <p className="text-[#595959] text-sm md:text-[16px] font-medium md:text-right max-w-sm">
+            <p className="text-[#595959] hidden md:block text-sm md:text-[16px] font-medium md:text-right max-w-sm">
               Lorem ipsum dolor sit amet consectetur. Senectus luctus a urna sed
               in viverra mauris enim.
             </p>

@@ -17,7 +17,7 @@ export default function FoundersMessage({
         className=" rounded-2xl overflow-hidden p-6"
       >
         {/* subtle translucent panel on top so text is always readable */}
-        <div className="bg-[#FFF8FD] border border-[#F0F0F0] rounded-2xl p-6 md:p-8 flex items-center gap-20">
+        <div className="bg-[#FFF8FD] border border-[#F0F0F0] rounded-2xl p-6 md:p-8 flex items-center flex-col md:flex-row gap-8 md:gap-20">
           {/* left: avatar + name */}
           <div className="shrink-0 flex items-start gap-4">
             <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden bg-gray-100 ring-1 ring-gray-200">
@@ -31,7 +31,7 @@ export default function FoundersMessage({
               )}
             </div>
 
-            <div className="hidden md:block">
+            <div className="block ">
               <div className="text-xl font-bold text-[#A71077]">{name}</div>
               <div className="text-sm text-[#454545] mt-1 max-w-xs font-semibold">{role}</div>
             </div>

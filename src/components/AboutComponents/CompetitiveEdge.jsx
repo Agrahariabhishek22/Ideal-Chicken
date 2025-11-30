@@ -49,12 +49,12 @@ export default function CompetitiveEdge() {
   }
 
   return (
-    <section className="w-full px-6 py-12">
+    <section className="w-full px-6 py-5">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-8">
           {/* Header Section Animation: Fade in could be added here, but keeping it simple for now */}
           <div>
-            <span className="inline-block bg-[#FEE2AF] text-[#262626] border border-[#FDD48A] px-3 py-1 rounded-full text-sm font-medium hover:scale-105 transition-transform duration-300 cursor-default">
+            <span className="inline-block bg-[#FEE2AF] text-[#262626] border border-[#FDD48A] px-3 py-1 rounded-full text-sm font-bold hover:scale-105 transition-transform duration-300 cursor-default">
               Our Competitive Edge
             </span>
 
@@ -79,7 +79,7 @@ export default function CompetitiveEdge() {
               aria-labelledby={`title-${it.id}`}
             >
               {/* Added group-hover:border-opacity logic for subtle border highlight */}
-              <div className="relative bg-linear-to-r from-[#F08F48]/5 to-[#C868A9]/5 border border-[#BFBFBF] group-hover:border-[#C868A9]/30 transition-colors duration-300 rounded-2xl p-6 h-full flex flex-col justify-between">
+              <div className="relative bg-linear-to-r from-[#F08F48]/5 to-[#C868A9]/5 border border-[#BFBFBF] group-hover:border-[#C868A9]/30 transition-colors duration-300 rounded-2xl p-4 h-full flex flex-col justify-between">
                 
                 {/* Image Section */}
                 <div className="flex items-start gap-4">
@@ -118,18 +118,18 @@ export default function CompetitiveEdge() {
                 </div>
 
                 {/* description + CTA area */}
-                <div className="mt-6">
+                <div className="mt-6 w-full">
                   <p className="text-sm text-[#141414] font-medium mb-4">
                     {it.subtitle}
                   </p>
 
-                  <div className="flex items-center gap-1">
+                  <div className="flex items-center justify-between gap-2">
                     {it.cta.map((c, idx) => (
                       <button
                         key={idx}
                         onClick={() => handleNavigate(it, c.action)}
                         // Added 'group/btn' to control the arrow icon only when hovering THIS button
-                        className="group/btn inline-flex items-center gap-2 font-semibold text-sm text-[#1F1F1F] px-3 transition-all duration-200 hover:brightness-95 active:scale-95"
+                        className=" group/btn inline-flex items-center gap-2 font-semibold text-sm text-[#1F1F1F] px-1 transition-all duration-200 hover:brightness-95 active:scale-95"
                         aria-label={`${c.label} for ${it.title}`}
                       >
                         <span>{c.label}</span>

@@ -35,7 +35,7 @@ export default function AboutSection({
   imageUrl = "/src/assets/AboutCenter.png",
 }) {
   return (
-    <section className="relative w-full px-6 py-8">
+    <section className="relative w-full px-6 py-9">
       <div className="relative max-w-7xl mx-auto grid grid-cols-1 gap-8 lg:grid-cols-3 items-start">
         {/* LEFT: Text column */}
         <div className="lg:col-span-1">
