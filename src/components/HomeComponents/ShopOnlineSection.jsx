@@ -36,17 +36,16 @@ const COLORS = {
 const SHOP_DATA = {
   badge: "Shop Online",
   title: (<>
-  Fresh Chicken at <br /> Your Fingertips
+    Fresh Chicken at <br /> Your Fingertips
   </>),
-   
+  
   features: [
     "Premium Quality Chicken",
     "Delivered Super Fresh",
   ],
-  // Yahan aap <br /> laga kar line break control kar sakte hain
   ctaTitle: (
     <>
-      Your trusted poultry brand, <br   /> 
+      Your trusted poultry brand, <br /> 
       now closer than ever.
     </>
   ),
@@ -65,9 +64,9 @@ const SHOP_DATA = {
 
 const ShopOnlineSection = () => {
   return (
-    <section className="w-full  bg-white py-8 md:px-4 flex justify-center">
+    <section className="w-full bg-white py-8 md:px-4 flex justify-center">
       <motion.div
-        className="w-full max-w-[1440px] lg:h-[510px] bg-[#FFF2FB] border border-[#F6E7F1] rounded-[32px] p-8  flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12 shadow-sm"
+        className="w-full max-w-[1440px] lg:h-[510px] bg-[#FFF2FB] border border-[#F6E7F1] rounded-[32px] p-8 flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12 shadow-sm"
         style={{ backgroundColor: COLORS.violet1 }}
         variants={containerVariants}
         initial="hidden"
@@ -148,12 +147,14 @@ const ShopOnlineSection = () => {
 
         {/* --- COL 4: RIGHT CTA CONTENT --- */}
         <motion.div
-          className="flex-1 flex flex-col items-star mt-7 gap-4 max-w-md "
+          // CHANGE 1: Added 'items-center lg:items-start' to center content on mobile
+          className="flex-1 flex flex-col items-center lg:items-start mt-7 gap-4 max-w-md"
           variants={itemVariants}
         >
-          <div className="flex flex-col gap-0">
+          {/* CHANGE 2: Added 'text-center lg:text-left' so text aligns with buttons */}
+          <div className="flex flex-col gap-0 text-center lg:text-left">
             <h3
-              className="text-2xl md:text-2xl  font-bold leading-tight"
+              className="text-2xl md:text-2xl font-bold leading-tight"
               style={{ color: COLORS.black10 }}
             >
               {SHOP_DATA.ctaTitle}
@@ -181,10 +182,12 @@ const ShopOnlineSection = () => {
           </motion.a>
 
           {/* Call CTA - UPDATED STRUCTURE */}
-          <div className="flex flex-col gap-2 w-full mt-2">
+          {/* CHANGE 3: Added 'items-center lg:items-start' here too */}
+          <div className="flex flex-col items-center lg:items-start gap-2 w-full mt-2">
             
             {/* Label aur Bar Container */}
-            <div className="flex flex-col items-start gap-1">
+            {/* CHANGE 4: Added 'items-center lg:items-start' here too */}
+            <div className="flex flex-col items-center lg:items-start gap-1">
                <span
                 className="font-bold text-sm tracking-widest uppercase"
                 style={{ color: COLORS.black10 }}
@@ -192,7 +195,6 @@ const ShopOnlineSection = () => {
                 OR GIVE US A CALL
               </span>
               
-              {/* Purple Bar ab neeche hai */}
               <div
                 className="h-1 w-12 rounded-full"
                 style={{ backgroundColor: COLORS.violet6 }}

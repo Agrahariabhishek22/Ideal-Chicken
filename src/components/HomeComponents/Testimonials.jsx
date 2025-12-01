@@ -85,11 +85,11 @@ const TestimonialsSection = () => {
   const isNextDisabled = currentIndex >= TESTIMONIALS.length - itemsPerPage;
 
   return (
-    <section className="w-full bg-white py-10 px-4 md:px-8 font-sans overflow-hidden">
+    <section className="w-full bg-white py-2 lg:py-8 px-4 md:px-8 font-sans overflow-hidden">
       <div className="max-w-[1480px] mx-auto">
         
         {/* --- HEADER --- */}
-        <div className="flex flex-col items-center text-center mb-16 space-y-5">
+        <div className="flex flex-col items-center text-center mb-1 space-y-5">
           <span className="bg-[#FFE4B5] border border-[#FDD48A] text-[#2D1B28] px-6 py-2 rounded-full text-sm font-bold tracking-wide shadow-sm">
             Testimonials
           </span>

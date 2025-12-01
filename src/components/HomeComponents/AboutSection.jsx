@@ -42,13 +42,13 @@ const ABOUT_DATA = {
     },
     {
       id: 3,
-      icon: "/logo1.png", 
+      icon: "/Frame 15 (1).png", 
       title: "20+ States",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       id: 4,
-      icon: "/logo2.png", 
+      icon: "/Frame 15.png", 
       title: "1,000+ Partners",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }
@@ -149,18 +149,22 @@ const AboutSection = () => {
 
           {/* === COLUMN 3: STATS GRID (Span 4) === */}
           <div className="lg:col-span-4 lg:h-[492px] lg:w-[437px] px-3" >
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 h-full">
+            {/* UPDATED HERE: 
+                Changed 'grid-cols-1 sm:grid-cols-2' to just 'grid-cols-2'.
+                This forces 2 columns on ALL screen sizes, including mobile.
+            */}
+            <div className="grid grid-cols-2 gap-4 h-full">
               {ABOUT_DATA.stats.map((stat) => (
                 <div 
                   key={stat.id} 
-                  className="  rounded-2xl p-6 flex flex-col gap-3 shadow-sm hover:shadow-md transition-shadow"
+                  className="rounded-2xl p-6 flex flex-col gap-3 shadow-sm hover:shadow-md transition-shadow"
                 >
                   {/* --- UPDATED: ICON IMAGE --- */}
-                  <div className="w-16 h-16   p-2 rounded-lg flex items-center justify-center mb-1">
+                  <div className="w-16 h-16 p-2 rounded-lg flex items-center justify-center mb-1">
                     <img 
                       src={stat.icon} 
                       alt={stat.title} 
-                      className="w-full h-full object-contain     " 
+                      className="w-full h-full object-contain" 
                       // Note: 'brightness-0 invert' makes the image WHITE to match the previous icon style. 
                       // Remove these classes if your logo is already colored.
                     />

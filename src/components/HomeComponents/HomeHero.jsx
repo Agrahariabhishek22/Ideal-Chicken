@@ -74,7 +74,7 @@ const HeroSection = () => {
   if (!data) return <div className="h-screen bg-[#FEFEFE] animate-pulse"></div>;
 
   return (
-    <section className="w-full bg-[#FEFEFE] py-6 px-12 font-sans flex justify-center">
+    <section className="w-full bg-[#FEFEFE] py-2 px-4 lg:py-6 lg:px-12 font-sans flex justify-center">
       <div className="w-full">
 
         {/* MAIN LAYOUT - Gap reduced from gap-4 to gap-3 */}
@@ -167,13 +167,13 @@ const HeroSection = () => {
                    </h3>
                 </div>
 
-                <div className="relative w-full flex-1 rounded-2xl overflow-hidden mt-1 group">
+                <div className="  relative w-full flex-1 rounded-2xl overflow-hidden mt-1 group">
                    <img 
                        src={data.cards.customers.previewImage} 
                        alt="Raw Chicken" 
                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
                    />
-                   <div className="absolute bottom-4 right-8 bg-[#FFF0F0]  rounded-tl-[1.5rem]">
+                   <div className="  absolute -bottom-0.5 right-18 lg:bottom-4 lg:right-8 bg-[#FFF0F0]  rounded-tl-[1.5rem]">
                       <div className="flex flex-col text-[#A71077] font-bold text-[14px] leading-[1.15]">
                           {data.cards.customers.tagline.map((line, i) => (
                               <span key={i}>{line}</span>
@@ -189,7 +189,7 @@ const HeroSection = () => {
           {/* RIGHT CARD */}
           <motion.div 
             variants={cardVariants}
-            className="w-full lg:w-[680px] h-[500px] lg:h-[737px] relative rounded-[2.5rem] overflow-hidden shadow-2xl group"
+            className=" w-full lg:w-[680px] h-[500px] lg:h-[737px] relative rounded-[2.5rem] overflow-hidden shadow-2xl group"
           >
             <img
               src={data.cards.featureDish.src}

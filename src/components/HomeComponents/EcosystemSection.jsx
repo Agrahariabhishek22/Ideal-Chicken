@@ -58,14 +58,15 @@ const EcosystemSection = () => {
       <div className="relative w-full">
         
         {/* Gradient Overlays for smooth fade effect on edges */}
-        <div className="absolute top-0 left-0 z-10 h-full w-20 bg-gradient-to-r from-[#DFE2E6] to-transparent pointer-events-none"></div>
-        <div className="absolute top-0 right-0 z-10 h-full w-20 bg-gradient-to-l from-[#DFE2E6] to-transparent pointer-events-none"></div>
+        <div className="absolute top-0 left-0 z-10 h-full w-20 "></div>
+        <div className="absolute top-0 right-0 z-10 h-full w-20  "></div>
 
         {/* TRACK CONTAINER */}
-        <div className="flex w-full group">
+        <div className="flex w-full">
           
           {/* ANIMATION TRACK */}
-          <div className="flex animate-marquee group-hover:[animation-play-state:paused] gap-8 px-4 w-max">
+          {/* Change: Removed group-hover logic from here and added to CSS below for better reliability */}
+          <div className="flex animate-marquee gap-8 px-4 w-max">
             
             {/* FIRST SET OF CARDS */}
             {ECOSYSTEM_DATA.map((item) => (
@@ -85,13 +86,16 @@ const EcosystemSection = () => {
       <style>{`
         @keyframes marquee {
           0% { transform: translateX(0); }
-          /* UPDATED: -50% ensures it loops exactly after one full set passes */
           100% { transform: translateX(-50%); } 
         }
         .animate-marquee {
           display: flex;
           animation: marquee 25s linear infinite; 
           width: max-content; 
+        }
+        /* ADDED THIS BLOCK: Stops animation on hover */
+        .animate-marquee:hover {
+          animation-play-state: paused;
         }
       `}</style>
     </section>
@@ -101,18 +105,15 @@ const EcosystemSection = () => {
 // --- INDIVIDUAL CARD COMPONENT ---
 const Card = ({ item }) => {
   return (
-    // UPDATED WIDTH: w-[256px] fixed based on Figma
-    // UPDATED GAP: gap-6 (24px) based on Figma
-    <div className="w-[280px] shrink-0 flex flex-col gap-6 select-none">
+    <div className="w-[280px] shrink-0 flex flex-col gap-6 select-none group/card">
       
       {/* Image with Pink Border Frame */}
-      {/* Assuming visual style stays same, just dimensions changed */}
       <div className="bg-[#FCE7F3] p-2 rounded-[1.5rem] overflow-hidden">
         <div className="h-[220px] w-[260px] rounded-[1.5rem] overflow-hidden relative">
           <img 
             src={item.image} 
             alt={item.title} 
-            className="w-full h-full  object-cover hover:scale-110 transition-transform duration-700"
+            className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
           />
         </div>
       </div>

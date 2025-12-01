@@ -66,7 +66,8 @@ const PartnerSection = () => {
             </div>
 
             {/* === COL 3: RIGHT CTA (Span 4) === */}
-            <div className="lg:col-span-4 flex flex-col items-start gap-6 lg:pl-8">
+            {/* UPDATED: Added 'items-center' (mobile) and 'lg:items-start' (desktop) */}
+            <div className="lg:col-span-4 flex flex-col pb-10 items-center lg:items-start gap-6 lg:pl-8">
               
               {/* === UPDATED: Seal / Badge Image === */}
               {/* Icon hata kar image laga di hai. 'p-3' hata diya taaki image badi dikhe */}
@@ -78,13 +79,14 @@ const PartnerSection = () => {
                  />
               </div>
 
-             <div className='w-[70%] ml-2'>
+             {/* UPDATED: Added 'text-center' (mobile) and 'lg:text-left' (desktop). Moved 'ml-2' to 'lg:ml-2' */}
+             <div className='w-[70%] text-center lg:text-left lg:ml-2'>
                <p className="text-[#4A0E34] text-lg font-medium leading-relaxed">
                 {PARTNER_DATA.description}
               </p>
              </div>
 
-              <button className="bg-[#A71077] text-white pl-8 pr-2 py-2 rounded-full font-bold text-lg flex items-center gap-4 transition-all hover:bg-[#8B1E45] hover:scale-105 active:scale-95 group shadow-lg mt-2">
+              <button className="bg-[#A71077] text-white  pl-8 pr-2 py-2 rounded-full font-bold text-lg flex items-center gap-4 transition-all hover:bg-[#8B1E45] hover:scale-105 active:scale-95 group shadow-lg mt-2">
                 Partner with us
                 <span className="bg-white text-[#262626] rounded-full p-2.5 transition-transform group-hover:rotate-45">
                   <ArrowUpRight size={20} strokeWidth={2.5} />

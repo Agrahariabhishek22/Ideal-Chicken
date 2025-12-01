@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, ArrowUpRight, Menu, X } from 'lucide-react';
+import { ChevronDown, ArrowUpRight, X } from 'lucide-react'; // Menu ko hata diya kyunki ab image use hogi
 import { motion, AnimatePresence } from 'framer-motion';
 
 const MOCK_API_RESPONSE = [
@@ -48,7 +48,7 @@ const Navbar = () => {
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.5 }}
-            className="w-full bg-white   py-4 px-4 md:px-12 sticky top-0 z-50 "
+            className="w-full bg-white py-4 px-4 md:px-12 sticky top-0 z-50 "
         >
             <div className="max-w-7xl mx-auto flex justify-between items-center">
 
@@ -119,12 +119,21 @@ const Navbar = () => {
                         </div>
                     </motion.button>
 
-                    {/* Styled Hamburger */}
+                    {/* Styled Hamburger with Custom Image */}
                     <button
-                        className="lg:hidden p-3 rounded-xl bg-gray-100 shadow hover:bg-gray-200 transition"
+                        className="lg:hidden p-2 rounded-xl   shadow hover:bg-gray-200 transition flex items-center justify-center"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     >
-                        {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                        {isMobileMenuOpen ? (
+                            <X size={24} />
+                        ) : (
+                            // Yahan maine <img> tag lagaya hai custom icon ke liye
+                            <img 
+                                src="/burger-menu.svg" 
+                                alt="Menu" 
+                                className="w-10 h-10 object-contain" // w-6 h-6 = 24px, same size as icon
+                            />
+                        )}
                     </button>
                 </div>
             </div>

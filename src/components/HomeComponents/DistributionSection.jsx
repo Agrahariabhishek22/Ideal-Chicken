@@ -45,12 +45,12 @@ const CHANNELS = [
  
 const DistributionSection = () => {
   return (
-    <section className="w-full bg-white py-20 overflow-hidden font-sans">
+    <section className="w-full bg-white py-10 lg:py-20 overflow-hidden font-sans">
       <div className="max-w-[1440px] mx-auto px-4 mb-12 text-center">
         
         {/* --- HEADER --- */}
         <div className="flex flex-col items-center gap-4">
-          <span className="bg-[#FFE4B5] border border-[#FDD48A]  text-[#2D1B28] px-6 py-2 rounded-full text-sm font-bold tracking-wide shadow-sm">
+          <span className="bg-[#FFE4B5] border border-[#FDD48A]  text-[#2D1B28] px-6 py-2 rounded-full text-sm font-bold tracking-wide  ">
             Our Distribution Network
           </span>
           <h2 className="text-[#4A0E34] text-3xl md:text-5xl font-semibold tracking-tight">
@@ -66,8 +66,8 @@ const DistributionSection = () => {
       <div className="relative w-full">
         
         {/* Gradient Fades (Edges smooth karne ke liye) */}
-        <div className="absolute top-0 left-0 z-10 h-full w-20 bg-gradient-to-r from-[#DFE2E6] to-transparent pointer-events-none"></div>
-        <div className="absolute top-0 right-0 z-10 h-full w-20 bg-gradient-to-l from-[#DFE2E6] to-transparent pointer-events-none"></div>
+        <div className="absolute top-0 left-0 z-10 h-full w-20  "></div>
+        <div className="absolute top-0 right-0 z-10 h-full w-20  "></div>
 
         {/* TRACK CONTAINER */}
         <div className="flex w-full group">
