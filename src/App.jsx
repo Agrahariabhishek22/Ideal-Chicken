@@ -4,6 +4,7 @@ import Navbar from './components/CommonComponets/Navbar'
 import HomeHero from './components/HomeComponents/HomeHero'
 import HomePage from './pages/HomePage'
 import Footer from './components/CommonComponets/Footer'
+import StoreLocator from './pages/StoreLocator'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -14,6 +15,7 @@ function App() {
        
     <Routes>
     <Route path='/' element={<HomePage/>} />
+    <Route path='/locations' element={<StoreLocator/>} />
     </Routes>
     </BrowserRouter>
        <Footer/>
