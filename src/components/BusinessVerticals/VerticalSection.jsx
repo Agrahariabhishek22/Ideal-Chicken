@@ -109,10 +109,10 @@ const VerticalSection = () => {
   if (!activeData) return <div className="p-10 text-center">Loading...</div>;
 
   return (
-    <div className="bg-[#FEFEFC] min-h-screen py-2 px-4 sm:px-6 lg:px-8 font-sans">
+    <div className="bg-[#FEFEFC] py-2 px-4 sm:px-6 lg:px-8 font-sans">
       <div className="max-w-7xl mx-auto">
         {/* --- NAV TABS (Revised UI) --- */}
-        <div className="flex flex-wrap justify-center gap-10 border-b border-[#EBEDF0] mb-7">
+        <div className="flex flex-wrap justify-center gap-10 border-b border-gray-300 mb-12">
           {Object.keys(VERTICALS_DATA).map((key) => {
             const item = VERTICALS_DATA[key];
             const isActive = key === category;

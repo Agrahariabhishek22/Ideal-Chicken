@@ -24,8 +24,8 @@ export default function Hero({ title, subtitle, badge, img }) {
 
         <div>
           <h1
-            className={`text-3xl sm:text-4xl md:text-5xl font-semibold ${
-              badge == "About us" ? "text-[#A71077]":"text-[#FEFEFE]"
+            className={`relative text-3xl sm:text-4xl font-semibold ${
+              badge == "About us" ? "text-[#A71077]" : "text-[#FEFEFE]"
             } leading-tight  mb-4 w-[60%] mx-auto`}
           >
             {<>{title}</>}
@@ -34,7 +34,7 @@ export default function Hero({ title, subtitle, badge, img }) {
 
         <p
           className={`" max-w-2xl mx-auto ${
-            badge == "About us" ? "text-[#5F0944]":"text-[#FEFEFE]"
+            badge == "About us" ? "text-[#5F0944]" : "text-[#FEFEFE]"
           } text-md sm:text-base text-[#5F0944] font-medium w-[5%]"`}
         >
           {subtitle}
