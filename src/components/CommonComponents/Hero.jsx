@@ -1,7 +1,7 @@
 // Hero.jsx
 import React from "react";
 
-export default function Hero({ title, subtitle, badge,img}) {
+export default function Hero({ title, subtitle, badge, img }) {
   return (
     <section
       aria-label="Hero"
@@ -14,7 +14,6 @@ export default function Hero({ title, subtitle, badge,img}) {
         backgroundRepeat: "no-repeat",
       }}
     >
-
       {/* centered content (text is separate from the image) */}
       <div className="relative flex flex-col item-center justify-center z-10 max-w-5xl mx-auto px-6 py-10 sm:py-20 lg:py-20 text-center h-full">
         {badge && (
@@ -24,16 +23,20 @@ export default function Hero({ title, subtitle, badge,img}) {
         )}
 
         <div>
-          <h1 className={`text-3xl sm:text-4xl md:text-5xl font-semibold ${badge=="Our Products"?"text-[#FEFEFE]":"text-[#A71077]"} leading-tight  mb-4 w-[60%] mx-auto`}>
-          {
-            <>
-              {title}
-            </>
-          } 
-        </h1>
+          <h1
+            className={`text-3xl sm:text-4xl md:text-5xl font-semibold ${
+              badge == "About us" ? "text-[#A71077]":"text-[#FEFEFE]"
+            } leading-tight  mb-4 w-[60%] mx-auto`}
+          >
+            {<>{title}</>}
+          </h1>
         </div>
 
-        <p className={`" max-w-2xl mx-auto ${badge=="Our Products"?"text-[#FEFEFE]":"text-[#5F0944]"} text-md sm:text-base text-[#5F0944] font-medium w-[5%]"`}>
+        <p
+          className={`" max-w-2xl mx-auto ${
+            badge == "About us" ? "text-[#5F0944]":"text-[#FEFEFE]"
+          } text-md sm:text-base text-[#5F0944] font-medium w-[5%]"`}
+        >
           {subtitle}
         </p>
       </div>
