@@ -22,18 +22,18 @@ const CATEGORIES = [
     id: "whole",
     label: "Whole Birds",
     // Tumhara wala Bird SVG (Optimized with currentColor)
-    icon: "/src/assets/Vector7.png",
+    icon: "/src/assets/Vector (7).png",
   },
   {
     id: "fresh-cuts",
     label: "Fresh Chicken Cuts",
-    icon: "/src/assets/Vector (9).png",
+    icon: "/src/assets/Vector (10).png",
   },
   {
     id: "special",
     label: "Chicken Special Cuts",
     // Drumstick Icon
-    icon: "/src/assets/Vector (10).png",
+    icon: "/src/assets/Vector (9).png",
   },
   {
     id: "giblets",
