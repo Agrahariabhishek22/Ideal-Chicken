@@ -12,12 +12,35 @@ import {
 
 // --- MOCK DATA (Replace this with your CMS API response) ---
 const CATEGORIES = [
-  { id: "all", label: "All Products", icon: LayoutGrid },
-  { id: "whole", label: "Whole Birds", icon: Bird },
-  { id: "fresh-cuts", label: "Fresh Chicken Cuts", icon: Scissors },
-  { id: "special", label: "Chicken Special Cuts", icon: Drumstick }, // Active in your image
-  { id: "giblets", label: "Chicken Giblets", icon: Package },
-  { id: "whole", label: "Whole Birds", icon: Bird },
+  {
+    id: "all",
+    label: "All Products",
+    // Grid Icon
+    icon: LayoutGrid,
+  },
+  {
+    id: "whole",
+    label: "Whole Birds",
+    // Tumhara wala Bird SVG (Optimized with currentColor)
+    icon: "/src/assets/Vector7.png",
+  },
+  {
+    id: "fresh-cuts",
+    label: "Fresh Chicken Cuts",
+    icon: "/src/assets/Vector (9).png",
+  },
+  {
+    id: "special",
+    label: "Chicken Special Cuts",
+    // Drumstick Icon
+    icon: "/src/assets/Vector (10).png",
+  },
+  {
+    id: "giblets",
+    label: "Chicken Giblets",
+    // Package Icon
+    icon: "/src/assets/Vector (8).png",
+  },
 ];
 
 const MOCK_PRODUCTS = [
@@ -182,17 +205,16 @@ export default function ProductCatalog() {
           {/* Categories Tab */}
           {/* 'Categories' Label Icon */}
           <div className="flex items-center gap-2 text-[#6B788E] font-medium text-sm tracking-wide px-2 shrink-0">
-            <LayoutGrid className="w-5 h-5 text-[#A71077]" />
-            {/* <img
-                src="/src/assets/Vector (3).png"
-                className="w-5 h-5 text-[#A71077]"
-                alt=""
-              /> */}
+            <img
+              src="/src/assets/Vector (11).png"
+              className="w-4 h-4 text-[#A71077]"
+              alt=""
+            />
             <span>Categories</span>
           </div>
 
           {/* Vertical Divider */}
-          <div className="h-14 w-px bg-gray-300 mx-2 hidden md:block shrink-0"></div>
+          <div className="h-14 w-px bg-gray-300 hidden md:block shrink-0"></div>
           <nav
             aria-label="Product Categories"
             className="flex items-center gap-4 w-full xl:w-auto overflow-x-auto pb-2 xl:pb-0 scrollbar-hide"
@@ -202,22 +224,26 @@ export default function ProductCatalog() {
               {CATEGORIES.slice(1).map((cat) => {
                 const isActive = activeCategory === cat.id;
                 const Icon = cat.icon;
+                // console.log(cat.icon);
+
                 return (
                   <button
                     key={cat.id}
                     onClick={() => handleCategoryChange(cat.id)}
                     className={`
-                      flex items-center gap-2 px-5 py-2.5 rounded-full text-base font-semibold transition-all duration-300 whitespace-nowrap shrink-0
+                      flex items-center gap-2 px-4 py-2 rounded-full text-base font-semibold transition-all duration-300 whitespace-nowrap shrink-0 mb-1 ml-1 mr-1
                       ${
                         isActive
-                          ? "bg-[#A71077] text-[#FEFEFE] shadow-md transform scale-105"
+                          ? "bg-[#A71077] text-[#FEFEFE] shadow-md transform scale-103"
                           : "bg-[#F7F7F7] text-[#595959] border border-[#F0F0F0] hover:bg-gray-50 hover:shadow-sm"
                       }
                     `}
                   >
-                    <Icon
-                      className={`w-4 h-4 font-semibold text-base ${
-                        isActive ? "text-[#F6E7F1]" : "text-[#BFBFBF]"
+                    <img
+                      src={cat.icon}
+                      alt={cat.label}
+                      className={`w-4 h-4 object-contain ${
+                        isActive ? "brightness-0 invert" : ""
                       }`}
                     />
                     {cat.label}
@@ -228,7 +254,7 @@ export default function ProductCatalog() {
           </nav>
 
           {/* Search Bar */}
-          <div className="relative w-full mb-4 xl:w-[320px] group">
+          <div className="relative w-full mb-2 xl:w-[320px] group">
             <input
               type="text"
               placeholder="Search"

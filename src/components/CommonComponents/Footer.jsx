@@ -1,19 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-/**
- * Footer with micro-animations (Framer Motion)
- * - Uses the exact colors you provided in the Figma snippet.
- * - Mount reveal animations with subtle stagger for columns.
- * - Hover micro-animations for CTA, links and social icons.
- *
- * NOTE: replace image paths with your actual assets.
- */
-
-const pink = "#A71077";
-const dark = "#262626";
-const lightBorder = "#F5F5F5";
-
 const container = {
   hidden: { opacity: 0, y: 8 },
   show: {
@@ -37,7 +24,7 @@ export default function Footer() {
     <footer className="relative border-t-2 border-[#F5F5F5] text-gray-300 ">
       <div className="w-full mx-auto px-6 lg:px-8 py-2 ">
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-12 gap-1 space-x-2"
+          className="grid grid-cols-1 md:grid-cols-16 gap-1 space-x-2"
           initial="hidden"
           animate="show"
           variants={container}
@@ -45,7 +32,7 @@ export default function Footer() {
           {/* LEFT: logo + description + CTA */}
           <motion.div
             variants={itemFadeUp}
-            className="mt-6 md:border-r-2 border-[#F5F5F5] w-full flex flex-col items-center md:items-start justify-center md:justify-start md:pr-6  md:col-span-3"
+            className="mt-6 md:border-r-2 border-[#F5F5F5] w-full flex flex-col items-center md:items-start justify-center md:justify-start md:pr-6  md:col-span-4"
           >
             <div className="flex items-start justify-center md:justify-start gap-4">
               <div className="w-28 h-20 flex items-center justify-center">
@@ -75,7 +62,7 @@ export default function Footer() {
                 boxShadow: "0 6px 20px rgba(167,16,119,0.12)",
               }}
               whileTap={{ scale: 0.99 }}
-              className=" border  mt-8 h-[50px] inline-flex items-center justify-center md:justify-start gap-3 bg-[#262626] hover:bg-[#2f2f2f] focus:outline-none focus:ring-2 focus:ring-pink-600 rounded-full px-6 py-3 text-[#FEFEFE] font-bold text-[16px] shadow-sm"
+              className=" border  mt-8  inline-flex items-center justify-center md:justify-start gap-3 bg-[#262626] hover:bg-[#2f2f2f] focus:outline-none focus:ring-2 focus:ring-pink-600 rounded-full px-4 py-2 text-[#FEFEFE] font-bold text-[16px] shadow-sm"
               aria-label="Explore our products"
             >
               <span>Explore Our Products</span>
@@ -86,7 +73,7 @@ export default function Footer() {
           {/* MIDDLE: links columns */}
           <motion.div
             variants={itemFadeUp}
-            className="mt-6 md:border-r-2 md:ml-5 border-[#F5F5F5] md:col-span-6 grid grid-cols-4 gap-10"
+            className="mt-6 md:border-r-2 md:ml-5 border-[#F5F5F5] md:col-span-8 grid grid-cols-4 gap-8"
           >
             {/* each column will also animate slightly in */}
             {[
@@ -156,7 +143,7 @@ export default function Footer() {
           {/* RIGHT: contact info */}
           <motion.div
             variants={itemFadeUp}
-            className="mt-6 md:col-span-3 md:ml-5"
+            className="mt-6 md:col-span-4 md:ml-5 max-w-full"
           >
             <h3 className="text-[15px] uppercase tracking-wider font-bold text-[#262626]">
               Get in touch
@@ -165,7 +152,7 @@ export default function Footer() {
               <div className="mt-2 w-12 h-0.5 bg-[#A71077] rounded-full"></div>
             </div>
 
-            <div className="mt-4 space-y-8 text-[16px] font-medium text-[#262626]">
+            <div className="mt-4 space-y-8 text-[16px] max-w-full font-medium text-[#262626]">
               <motion.div
                 className="flex items-start gap-3"
                 whileHover={{ x: 4 }}
@@ -181,7 +168,7 @@ export default function Footer() {
                 whileHover={{ x: 4 }}
               >
                 <img src="/src/assets/mail.png" alt="mail" className="" />
-                <div className="">anupamafeeds@idealchicken.in</div>
+                <span className="break-all flex-1">anupamafeeds@idealchicken.in</span>
               </motion.div>
 
               <motion.div
@@ -200,23 +187,23 @@ export default function Footer() {
                 </div>
               </motion.div>
 
-              <div className="w-full h-full">
-                <div className="mt-16" variants={itemFadeUp}>
-                  <a href="#" className="flex justify-center ">
-                    <div className="items-center flex justify-center">
-                      <img
-                        src="/src/assets/ios store.png"
-                        alt="Get it on Google Play"
-                        className="h-10 transform transition-transform duration-200 hover:scale-105"
-                      />
-                      <img
-                        src="/src/assets/playstore.png"
-                        alt="Get it on Google Play"
-                        className="h-14 transform transition-transform duration-200 hover:scale-105"
-                      />
-                    </div>
-                  </a>
-                </div>
+              {/* <div className="w-full h-full"> */}
+              <div className="mt-16" variants={itemFadeUp}>
+                <a href="#" className="flex justify-center ">
+                  <div className="items-center flex  md:flex-col justify-center">
+                    <img
+                      src="/src/assets/ios store.png"
+                      alt="Get it on Google Play"
+                      className="h-10 transform transition-transform duration-200 hover:scale-105"
+                    />
+                    <img
+                      src="/src/assets/playstore.png"
+                      alt="Get it on Google Play"
+                      className="h-15 transform transition-transform duration-200 hover:scale-105"
+                    />
+                  </div>
+                </a>
+                {/* </div> */}
               </div>
             </div>
           </motion.div>
