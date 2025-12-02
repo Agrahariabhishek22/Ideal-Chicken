@@ -50,7 +50,7 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
             className="w-full bg-white py-4 px-4 md:px-12 sticky top-0 z-50 "
         >
-            <div className="max-w-7xl mx-auto flex justify-between items-center">
+            <div className="max-w-[1380px] mx-auto flex justify-between items-center">
 
                 {/* LOGO */}
                 <a href="/" className="flex-shrink-0 cursor-pointer z-50">
@@ -58,7 +58,7 @@ const Navbar = () => {
                         <img
                             src="/ideal-chicken-logo.png"
                             alt="Ideal Chicken Logo"
-                            className="h-10 md:h-14 w-auto object-contain"
+                            className="h-10 md:h-18   w-auto object-contain"
                         />
                     </motion.div>
                 </a>
