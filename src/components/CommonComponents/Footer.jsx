@@ -153,7 +153,8 @@ export default function Footer() {
             </div>
 
             <div className="mt-4 space-y-8 text-[16px] max-w-full font-medium text-[#262626]">
-              <motion.div
+              <motion.a
+                href="tel:08242230507"
                 className="flex items-start gap-3"
                 whileHover={{ x: 4 }}
               >
@@ -161,15 +162,18 @@ export default function Footer() {
                 <div className="">
                   <div className="">(0824) 2230507</div>
                 </div>
-              </motion.div>
+              </motion.a>
 
-              <motion.div
+              <motion.a
+                href="mailto:anupamafeeds@idealchicken.in"
                 className="flex items-start gap-3"
                 whileHover={{ x: 4 }}
               >
                 <img src="/src/assets/mail.png" alt="mail" className="" />
-                <span className="break-all flex-1">anupamafeeds@idealchicken.in</span>
-              </motion.div>
+                <span className="break-all flex-1">
+                  anupamafeeds@idealchicken.in
+                </span>
+              </motion.a>
 
               <motion.div
                 className="flex items-start gap-3"
