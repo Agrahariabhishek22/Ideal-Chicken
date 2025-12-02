@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ChevronDown, ArrowUpRight, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const MOCK_API_RESPONSE = [
   { id: 1, label: "ABOUT", href: "/about", hasDropdown: false },
@@ -29,6 +30,7 @@ const MOCK_API_RESPONSE = [
 ];
 
 const Navbar = () => {
+  const navigate=useNavigate();
   const [navItems, setNavItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -112,6 +114,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="hidden sm:flex group items-center gap-3 bg-[#222222] text-white px-5 py-2.5 rounded-full shadow-md"
+            onClick={()=>navigate('/contact-us')}
           >
             <span className="font-bold text-sm tracking-wide">
               Get in Touch

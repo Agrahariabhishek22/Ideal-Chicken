@@ -3,6 +3,7 @@ import Navbar from "../components/CommonComponents/Navbar";
 import Footer from "../components/CommonComponents/Footer";
 import VerticalSection from "../components/BusinessVerticals/VerticalSection";
 import Hero from "../components/CommonComponents/Hero";
+import PartnerSection from "../components/CommonComponents/PartnerSection";
 
 const BusinessVertical = () => {
   return (
@@ -22,6 +23,7 @@ const BusinessVertical = () => {
         </div>
       </div>
       <VerticalSection />
+      <PartnerSection/>
       <Footer />
     </div>
   );

@@ -18,7 +18,7 @@ const Product = () => {
         />
       </div>
       <ProductCatalog />
-      {/* <ShopOnlineSection/> */}
+      <ShopOnlineSection/>
       <Footer />
     </div>
   );

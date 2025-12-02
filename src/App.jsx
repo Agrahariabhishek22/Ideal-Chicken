@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import About from "./pages/About";
 import Product from "./pages/Product"
 import BusinessVertical from "./pages/BusinessVertical";
+import ContactUs from "./pages/ContactUs";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path='/verticals' element={<Navigate to ="/verticals/breeders" replace/> }
            />
           <Route path='/verticals/:category' element={<BusinessVertical/>} />
+          <Route path="/contact-us" element={<ContactUs/>} />
         </Routes>
       </Router>
     </>
