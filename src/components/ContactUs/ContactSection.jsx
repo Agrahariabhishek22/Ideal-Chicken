@@ -53,7 +53,7 @@ export default function ContactSection() {
 
   return (
     <section
-      className="w-full px-4 border-t-2 border-[#F5F5F5] md:py-10 py-6 bg-white"
+      className="w-full px-7  border-t-2 border-[#F5F5F5] md:py-10 py-6 bg-white"
       id="contact"
     >
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-11">

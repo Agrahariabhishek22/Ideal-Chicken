@@ -9,8 +9,8 @@ const BusinessVertical = () => {
   return (
     <div>
       <Navbar />
-      <div className=" flex justify-between px-6 mb-5 h-[245px] gap-4">
-        <div className="w-[70%] h-full">
+      <div className="w-full flex flex-col md:flex-row items-center justify-between px-6 mb-5 md:h-[245px] gap-4">
+        <div className="md:w-[70%] w-full h-[245px]">
           <Hero
             badge="Business Verticals"
             title="Our Poultry Ecosystem"
@@ -18,8 +18,8 @@ const BusinessVertical = () => {
             img="/Block 1 (2).png"
           />
         </div>
-        <div className="h-full hiiden md:visible w-[30%]">
-          <img src="/src/assets/Block 1 (1).png" alt="" className="h-full" />
+        <div className="w-full flex justify-center md:w-[30%]">
+          <img src="/src/assets/Block 1 (1).png" alt="" className="h-[245px] object-fill w-full" />
         </div>
       </div>
       <VerticalSection />

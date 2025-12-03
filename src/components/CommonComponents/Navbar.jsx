@@ -62,7 +62,7 @@ const Navbar = () => {
             <img
               src="/src/assets/Ideal Chicken Logo.png"
               alt="Ideal Chicken Logo"
-              className="h-10 md:h-14 w-auto object-contain"
+              className="h-12 md:h-18 w-auto object-contain"
             />
           </motion.div>
         </a>
