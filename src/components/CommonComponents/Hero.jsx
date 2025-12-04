@@ -17,7 +17,7 @@ export default function Hero({ title, subtitle, badge, img }) {
       {/* centered content (text is separate from the image) */}
       <div className="relative flex flex-col item-center justify-center z-10 max-w-5xl mx-auto px-6 py-10 sm:py-20 lg:py-20 text-center h-full">
         {badge && (
-          <span className="mx-auto bg-[#FEFEFE] text-[#770B54] px-4 py-1.5 rounded-full text-sm font-bold mb-2 w-[13%]">
+          <span className="mx-auto bg-[#FEFEFE] text-[#770B54] px-4 py-1.5 rounded-full text-sm font-bold mb-2 ">
             {badge}
           </span>
         )}
