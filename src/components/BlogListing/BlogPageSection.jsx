@@ -259,7 +259,7 @@ const BlogListing = () => {
               onClick={() => handleCategoryChange(cat)}
               className={`px-6 py-2.5 rounded-full text-sm font-bold transition-colors shadow-sm
                 ${activeCategory === cat
-                  ? 'bg-[#be185d] text-white'
+                  ? 'bg-[#A71077] text-white'
                   : 'bg-white text-gray-600 hover:bg-gray-100'
                 }`}
             >
