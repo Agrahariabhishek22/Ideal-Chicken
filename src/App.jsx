@@ -3,6 +3,7 @@ import About from "./pages/About";
 import Product from "./pages/Product"
 import BusinessVertical from "./pages/BusinessVertical";
 import ContactUs from "./pages/ContactUs";
+import News from "./pages/News";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
            />
           <Route path='/verticals/:category' element={<BusinessVertical/>} />
           <Route path="/contact-us" element={<ContactUs/>} />
+          <Route path="/news" element={<News/>} />
         </Routes>
       </Router>
     </>

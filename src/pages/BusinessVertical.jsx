@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/CommonComponents/Navbar";
 import Footer from "../components/CommonComponents/Footer";
-import VerticalSection from "../components/BusinessVerticals/VerticalSection";
+import VerticalSection from "../components/BusinessVerticalsComponents/VerticalSection";
 import Hero from "../components/CommonComponents/Hero";
 import PartnerSection from "../components/CommonComponents/PartnerSection";
 

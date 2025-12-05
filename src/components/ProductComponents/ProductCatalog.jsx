@@ -260,7 +260,7 @@ export default function ProductCatalog() {
               placeholder="Search"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full bg-[#FEFEFE] rounded-full py-3 pl-12 pr-4 text-base font-semibold text-[#1F1F1F] outline-none border border-[#F0F0F0] focus:border-[#A71077]/30 transition-all shadow-sm group-hover:shadow-md"
+              className="w-full bg-[#FEFEFE] rounded-full py-3 pl-12 pr-4 text-base font-semibold text-[#1F1F1F] placeholder:text-[#1F1F1F] outline-none border border-[#F0F0F0] focus:border-[#A71077]/30 transition-all shadow-sm group-hover:shadow-md"
             />
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#A71077]" />
           </div>
