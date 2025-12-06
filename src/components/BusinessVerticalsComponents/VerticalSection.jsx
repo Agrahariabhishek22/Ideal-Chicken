@@ -6,7 +6,7 @@ const VERTICALS_DATA = {
   breeders: {
     id: "breeders",
     title: "Breeders",
-    icon: "/src/assets/Rectangle 2.png",
+    icon: "/Rectangle_2.png",
     overview:
       "Our breeding program is the foundation of our integrated operations, ensuring superior genetic quality and healthy offspring that meet the highest industry standards.",
     highlights: [
@@ -16,16 +16,16 @@ const VERTICALS_DATA = {
       "Breeding programs for optimal performance.",
     ],
     images: [
-      "/src/assets/Rectangle 16.png",
-      "/src/assets/Rectangle 18.png",
-      "/src/assets/Rectangle 19.png",
-      "/src/assets/Rectangle 20.png",
+      "/Rectangle 16.png",
+      "/Rectangle 18.png",
+      "/Rectangle 19.png",
+      "/Rectangle 20.png",
     ],
   },
   hatchery: {
     id: "hatchery",
     title: "Hatchery",
-    icon: "/src/assets/Rectangle 2 (1).png",
+    icon: "/Rectangle_2'1.png",
     overview:
       "Our hatchery operations are equipped with the latest incubation technology to ensure high hatchability rates and healthy day-old chicks.",
     highlights: [
@@ -34,14 +34,14 @@ const VERTICALS_DATA = {
       "Automated vaccination and grading.",
     ],
     images: [
-      "/src/assets/Rectangle 19.png",
-      "/src/assets/Rectangle 20.png",
+      "/Rectangle 19.png",
+      "/Rectangle 20.png",
     ],
   },
   feedmill: {
     id: "feedmill",
     title: "Feedmill",
-    icon: "/src/assets/Rectangle 2 (2).png", // Feed icon
+    icon: "/Rectangle_2'3.png", // Feed icon
     overview:
       "We produce high-quality, nutritionally balanced feed to support the growth and health of our poultry at every stage.",
     highlights: [
@@ -55,7 +55,7 @@ const VERTICALS_DATA = {
   breeder: {
     id: "breeder",
     title: "Breeders",
-    icon: "/src/assets/Rectangle 2.png",
+    icon: "/Rectangle_2'2.png",
     overview:
       "Our breeding program is the foundation of our integrated operations, ensuring superior genetic quality and healthy offspring that meet the highest industry standards.",
     highlights: [
@@ -65,10 +65,10 @@ const VERTICALS_DATA = {
       "Breeding programs for optimal performance.",
     ],
     images: [
-      "/src/assets/Rectangle 16.png",
-      "/src/assets/Rectangle 18.png",
-      "/src/assets/Rectangle 19.png",
-      "/src/assets/Rectangle 20.png",
+      "/Rectangle 16.png",
+      "/Rectangle 18.png",
+      "/Rectangle 19.png",
+      "/Rectangle 20.png",
     ],
   },
 };

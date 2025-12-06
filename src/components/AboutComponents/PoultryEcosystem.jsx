@@ -7,31 +7,31 @@ export default function PoultryEcosystem() {
       id: "breeders",
       title: "Breeders",
       text: "Expert breeding ensures strong genetic potential and health foundations.",
-      img: "/src/assets/Rectangle 2.png",
+      img: "/Rectangle 2.png",
     },
     {
       id: "hatchery",
       title: "Hatchery",
       text: "State-of-the-art incubation creates the perfect environment for hatching.",
-      img: "/src/assets/Rectangle 2 (1).png",
+      img: "/Rectangle 2 (1).png",
     },
     {
       id: "feedmill",
       title: "Feedmill",
       text: "Nutrient-rich, custom-formulated feed for optimal bird growth.",
-      img: "/src/assets/Rectangle 2 (2).png",
+      img: "/Rectangle 2 (2).png",
     },
     {
       id: "broiler",
       title: "Broiler Farming",
       text: "Raised in biosecure, stress-free environments for premium quality.",
-      img: "/src/assets/Rectangle 2 (3).png",
+      img: "/Rectangle 2 (3).png",
     },
     {
       id: "meat",
       title: "Meat Processing",
       text: "Hygienic processing ensuring freshness from farm to fork.",
-      img: "/src/assets/Rectangle 2 (4).png",
+      img: "/Rectangle 2 (4).png",
     },
   ];
 

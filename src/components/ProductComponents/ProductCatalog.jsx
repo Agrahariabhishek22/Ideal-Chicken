@@ -22,24 +22,24 @@ const CATEGORIES = [
     id: "whole",
     label: "Whole Birds",
     // Tumhara wala Bird SVG (Optimized with currentColor)
-    icon: "/src/assets/Vector (7).png",
+    icon: "/Vector (7).png",
   },
   {
     id: "fresh-cuts",
     label: "Fresh Chicken Cuts",
-    icon: "/src/assets/Vector (10).png",
+    icon: "/Vector (10).png",
   },
   {
     id: "special",
     label: "Chicken Special Cuts",
     // Drumstick Icon
-    icon: "/src/assets/Vector (9).png",
+    icon: "/Vector (9).png",
   },
   {
     id: "giblets",
     label: "Chicken Giblets",
     // Package Icon
-    icon: "/src/assets/Vector (8).png",
+    icon: "/Vector (8).png",
   },
 ];
 
@@ -52,7 +52,7 @@ const MOCK_PRODUCTS = [
     categoryLabel: "Chicken Special Cuts",
     shortDescription:
       "Lorem ipsum dolor sit amet consectetur. Gravida elementum vel mollis quam.",
-    image: "/src/assets/Rectangle 2 (5).png", // Replace with real URL
+    image: "/Rectangle 2 (29).png", // Replace with real URL
   },
   {
     id: 2,
@@ -62,7 +62,7 @@ const MOCK_PRODUCTS = [
     categoryLabel: "Chicken Special Cuts",
     shortDescription:
       "Lorem ipsum dolor sit amet consectetur. Gravida elementum vel mollis quam.",
-    image: "/src/assets/Rectangle 2 (5).png",
+    image: "/Rectangle 2 (29).png",
   },
   {
     id: 3,
@@ -72,7 +72,7 @@ const MOCK_PRODUCTS = [
     categoryLabel: "Chicken Special Cuts",
     shortDescription:
       "Lorem ipsum dolor sit amet consectetur. Gravida elementum vel mollis quam.",
-    image: "/src/assets/Rectangle 2 (6).png",
+    image: "/Rectangle 2 (30).png",
   },
   {
     id: 4,
@@ -82,7 +82,7 @@ const MOCK_PRODUCTS = [
     categoryLabel: "Chicken Special Cuts",
     shortDescription:
       "Lorem ipsum dolor sit amet consectetur. Gravida elementum vel mollis quam.",
-    image: "/src/assets/Rectangle 2 (7).png",
+    image: "/Rectangle 2 (7).png",
   },
   {
     id: 5,
@@ -92,7 +92,7 @@ const MOCK_PRODUCTS = [
     categoryLabel: "Chicken Special Cuts",
     shortDescription:
       "Lorem ipsum dolor sit amet consectetur. Gravida elementum vel mollis quam.",
-    image: "/src/assets/Rectangle 2 (8).png",
+    image: "/Rectangle 2 (8).png",
   },
   // ... CMS se aur data ayega, ye pagination test karne ke liye duplicates hain:
   {
@@ -103,7 +103,7 @@ const MOCK_PRODUCTS = [
     categoryLabel: "Fresh Chicken Cuts",
     shortDescription:
       "Juicy and tender drumsticks perfect for grilling or frying.",
-    image: "/src/assets/Rectangle 2 (6).png",
+    image: "/Rectangle 2 (6).png",
   },
   {
     id: 7,
@@ -113,7 +113,7 @@ const MOCK_PRODUCTS = [
     categoryLabel: "Whole Birds",
     shortDescription:
       "Full chicken without skin, ideal for curries and roasts.",
-    image: "/src/assets/Rectangle 2 (8).png",
+    image: "/Rectangle 2 (8).png",
   },
   {
     id: 8,
@@ -122,7 +122,7 @@ const MOCK_PRODUCTS = [
     category: "giblets",
     categoryLabel: "Chicken Giblets",
     shortDescription: "Nutrient-rich chicken liver, fresh and clean.",
-    image: "/src/assets/Rectangle 2 (6).png",
+    image: "/Rectangle 2 (6).png",
   },
   {
     id: 9,
@@ -131,7 +131,7 @@ const MOCK_PRODUCTS = [
     category: "special",
     categoryLabel: "Chicken Special Cuts",
     shortDescription: "Flavorful dark meat cuts, excellent for slow cooking.",
-    image: "/src/assets/Rectangle 2 (7).png",
+    image: "/Rectangle 2 (7).png",
   },
   {
     id: 10,
@@ -141,7 +141,7 @@ const MOCK_PRODUCTS = [
     categoryLabel: "Chicken Special Cuts",
     shortDescription:
       "Lorem ipsum dolor sit amet consectetur. Gravida elementum vel mollis quam.",
-    image: "/src/assets/Rectangle 2 (8).png",
+    image: "/Rectangle 2 (8).png",
   },
   {
     id: 11,
@@ -151,7 +151,7 @@ const MOCK_PRODUCTS = [
     categoryLabel: "Chicken Special Cuts",
     shortDescription:
       "Lorem ipsum dolor sit amet consectetur. Gravida elementum vel mollis quam.",
-    image: "/src/assets/Rectangle 2 (6).png",
+    image: "/Rectangle 2 (30).png",
   },
   {
     id: 12,
@@ -161,7 +161,7 @@ const MOCK_PRODUCTS = [
     categoryLabel: "Chicken Special Cuts",
     shortDescription:
       "Lorem ipsum dolor sit amet consectetur. Gravida elementum vel mollis quam.",
-    image: "/src/assets/Rectangle 2 (6).png",
+    image: "/Rectangle 2 (6).png",
   },
 ];
 
@@ -206,7 +206,7 @@ export default function ProductCatalog() {
           {/* 'Categories' Label Icon */}
           <div className="flex items-center gap-2 text-[#6B788E] font-medium text-sm tracking-wide px-2 shrink-0">
             <img
-              src="/src/assets/Vector (11).png"
+              src="/Vector (11).png"
               className="w-4 h-4 text-[#A71077]"
               alt=""
             />

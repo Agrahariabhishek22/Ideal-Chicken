@@ -23,9 +23,9 @@ export default function ContactSection() {
   });
 
   const icon = [
-    "/src/assets/insta.png",
-    "/src/assets/facebook.png",
-    "/src/assets/linkedin.png",
+    "/insta.png",
+    "/facebook.png",
+    "/linkedin.png",
   ];
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -83,7 +83,7 @@ export default function ContactSection() {
               >
                 <div className="flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                   <img
-                    src="/src/assets/phone.png"
+                    src="/phone.png"
                     className="w-7 h-7 text-[#A71077]"
                     alt=""
                   />
@@ -99,7 +99,7 @@ export default function ContactSection() {
               >
                 <div className="flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                   <img
-                    src="/src/assets/mail.png"
+                    src="/mail.png"
                     className="w-7 h-7 text-[#A71077]"
                     alt=""
                   />
@@ -112,7 +112,7 @@ export default function ContactSection() {
               <div className="flex items-start gap-4 text-[#1F1F1F]">
                 <div className="flex items-center justify-center shrink-0 mt-1 object-contain">
                   <img
-                    src="/src/assets/location.png"
+                    src="/location.png"
                     className="w-7 h-7 text-[#A71077]"
                     alt=""
                   />
@@ -156,7 +156,7 @@ export default function ContactSection() {
             >
               <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
                 <img
-                  src="/src/assets/Vector (12).png"
+                  src="/Vector (12).png"
                   className="w-6 h-6 text-white fill-white "
                   alt=""
                 />
@@ -167,7 +167,7 @@ export default function ContactSection() {
                 </span>
                 <span className="text-xs font-bold opacity-90 flex items-center gap-1">
                   <img
-                    src="/src/assets/Vector (13).png"
+                    src="/Vector (13).png"
                     className=" animate-pulse"
                     alt=""
                   />
@@ -181,7 +181,7 @@ export default function ContactSection() {
             <button className="flex-1 relative h-15 bg-white border border-[#E5E5E5] hover:border-[#A71077] text-[#1F1F1F] rounded-full p-2 pr-6 flex items-center gap-3 transition-all hover:shadow-md group">
               <div className="w-10 h-10 bg-[#A71077] rounded-full flex items-center justify-center">
                 <img
-                  src="/src/assets/Vector (11).png"
+                  src="/Vector (11).png"
                   className="w-5 h-5 brightness-0 invert"
                   alt=""
                 />

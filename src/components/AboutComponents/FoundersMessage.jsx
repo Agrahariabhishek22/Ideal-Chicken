@@ -6,7 +6,7 @@ export default function FoundersMessage({
   role = "Founder & CEO, Anupama Feeds & Farms and Ideal Chicken",
   quote = `“Quality is not just what we deliver — it's who we are. Every day, we work with dedication to ensure that families across India can trust Ideal Chicken for their nutrition, health, and happiness. Our commitment goes beyond business; it's a promise to nurture generations.”`,
   label = "FOUNDER'S MESSAGE",
-  avatar = "/src/assets/Founder 1.png", // pass avatar url if you have a separate avatar image
+  avatar = "/Founder 1.png", // pass avatar url if you have a separate avatar image
 }) {
   return (
     <section
@@ -40,7 +40,7 @@ export default function FoundersMessage({
           {/* right: label + quote */}
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-3">
-              <img src="/src/assets/double quote.png" alt="" />
+              <img src="/double quote.png" alt="" />
               <span className="text-xs font-semibold text-[#770B54] tracking-wider">{label}</span>
             </div>
             {/* <div className="border border-[#F0F0F0]" /> */}

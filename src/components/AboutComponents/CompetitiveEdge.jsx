@@ -9,7 +9,7 @@ export default function CompetitiveEdge() {
       subtitle:
         "We oversee breeding, hatching, feeding, and processing to ensure quality, safety, and sustainability.",
       tags: ["Farm to Table", "Sustainably Grown"],
-      img: "/src/assets/Rectangle 22.png",
+      img: "/Rectangle 22.png",
       cta: [{ label: "Explore Verticals", action: "explore" }],
     },
     {
@@ -18,7 +18,7 @@ export default function CompetitiveEdge() {
       subtitle:
         "Our modern plant processes 1,000+ birds per hour under strict hygiene and cold-chain monitoring.",
       tags: ["Born Healthy", "Smartly Fed"],
-      img: "/src/assets/Rectangle 22 (1).png",
+      img: "/Rectangle 22 (1).png",
       cta: [{ label: "Our Hatchery", action: "hatchery" }],
     },
     {
@@ -27,7 +27,7 @@ export default function CompetitiveEdge() {
       subtitle:
         "Automated feed production and precision hatching deliver strong, healthy birds from the very beginning.",
       tags: ["Fresh. Always.", "Handled with Care"],
-      img: "/src/assets/Rectangle 22 (2).png",
+      img: "/Rectangle 22 (2).png",
       cta: [{ label: "Explore Products", action: "products" }],
     },
     {
@@ -36,7 +36,7 @@ export default function CompetitiveEdge() {
       subtitle:
         "We connect technology and poultry excellence with a digital ordering app and real-time logistics.",
       tags: ["Tech-Powered", "Seamlessly Connected"],
-      img: "/src/assets/Rectangle 22 (3).png",
+      img: "/Rectangle 22 (3).png",
       cta: [
         { label: "Download the App", action: "download" },
         { label: "Contact us", action: "contact" },

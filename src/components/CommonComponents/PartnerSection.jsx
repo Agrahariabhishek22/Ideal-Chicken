@@ -12,9 +12,9 @@ const PARTNER_DATA = {
     "Delivered Fresh"
   ],
   description: "Whether you're a farmer, distributor, or retailer, partnering with Ideal Chicken gives you access to one of the best poultry supply chains in Coastal Karnataka — from superior breeding to fresh meat and eggs.",
-  collageImage: "/src/assets/Partner collage.png",
+  collageImage: "/Partner collage.png",
   // Nayi image ka path yahan add kiya hai
-  sealImage: "/src/assets/fresh-farm-logo.png"
+  sealImage: "/fresh-farm-logo.png"
 };
 
 const PartnerSection = () => {

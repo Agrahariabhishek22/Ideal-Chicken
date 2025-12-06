@@ -18,11 +18,11 @@ const MOCK_ALBUMS = Array.from({ length: 20 }).map((_, i) => ({
   date: "2024-10-20",
   // Cluster me dikhane ke liye aur slider ke liye images array
   images: [
-    `/src/assets/Rectangle 2 (${i + 17}).png`,
-    `/src/assets/Rectangle 3 (${i + 2}).png`,
-    `/src/assets/Rectangle 4 (${i + 1}).png`,
-    `/src/assets/Rectangle 2 (${i + 16}).png`, // Ye card pe nahi dikhegi, bas modal me
-    `/src/assets/Rectangle 3 (${i + 2}).png`,
+    `/Rectangle 2 (${i + 17}).png`,
+    `/Rectangle 3 (${i + 2}).png`,
+    `/Rectangle 4 (${i + 1}).png`,
+    `/Rectangle 2 (${i + 16}).png`, // Ye card pe nahi dikhegi, bas modal me
+    `/Rectangle 3 (${i + 2}).png`,
   ],
 }));
 

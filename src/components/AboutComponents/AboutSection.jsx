@@ -6,18 +6,18 @@ export default function AboutSection({
   title = "Legacy of Ideal Chicken",
   desc = "Founded over two decades ago in Coastal Karnataka, Ideal Chicken has grown from a local initiative into one of South India's most trusted poultry brands — built on quality, freshness, and farm-to-fork transparency.",
   bullets = [
-    { label: "20+ Years of Legacy", icon: "/src/assets/Tick Icon.png" },
-    { label: "Farm-to-Fork Supply Chain", icon: "/src/assets/cart icon.png" },
-    { label: "Ethically Sourced", icon: "/src/assets/thumb.png" },
+    { label: "20+ Years of Legacy", icon: "/Tick Icon.png" },
+    { label: "Farm-to-Fork Supply Chain", icon: "/cart icon.png" },
+    { label: "Ethically Sourced", icon: "/thumb.png" },
   ],
   stats = [
     {
-      img: "/src/assets/handshake.png",
+      img: "/handshake.png",
       title: "1000+",
       subtitle: "Partners across India",
     },
     {
-      img: "/src/assets/meatHand.png",
+      img: "/meatHand.png",
       subtitle: "20+ States",
       title: "Delivering across",
     },
@@ -25,14 +25,14 @@ export default function AboutSection({
   mission = {
     title: "Our Mission",
     text: "To offer hygienic poultry products through ethical farming, ensuring transparency.",
-    image: "/src/assets/Vector.png",
+    image: "/Vector (14).png",
   },
   vision = {
     title: "Our Vision",
     text: "To become India's trusted poultry brand, transforming the industry through technology.",
-    image: "/src/assets/flag icon.png",
+    image: "/flag icon.png",
   },
-  imageUrl = "/src/assets/AboutCenter.png",
+  imageUrl = "/AboutCenter.png",
 }) {
   return (
     <section className="relative w-full px-6 py-9">

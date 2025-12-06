@@ -14,11 +14,11 @@ const BusinessVertical = () => {
             badge="Business Verticals"
             title="Our Poultry Ecosystem"
             subtitle="A connected network of verticals shaping the future of poultry, sustainability, and innovation."
-            img="/Block 1 (2).png"
+            img="Block 1 (2).png"
           />
         </div>
         <div className="w-full flex justify-center md:w-[30%]">
-          <img src="/src/assets/Block 1 (1).png" alt="" className="h-[245px] object-fill w-full" />
+          <img src="/Block 1 (1).png" alt="" className="h-[245px] object-fill w-full" />
         </div>
       </div>
       <VerticalSection />

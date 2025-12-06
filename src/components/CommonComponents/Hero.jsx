@@ -8,7 +8,7 @@ export default function Hero({ title, subtitle, badge, img }) {
       className="relative w-full rounded-2xl overflow-hidden h-full"
       style={{
         // local uploaded image path
-        backgroundImage: `url('/src/assets/${img}')`,
+        backgroundImage: `url('/${img}')`,
         backgroundPosition: "center",
         backgroundSize: "100% 100%",
         backgroundRepeat: "no-repeat",
