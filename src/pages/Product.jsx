@@ -8,7 +8,6 @@ import ShopOnlineSection from "../components/CommonComponents/ShopOnlineSection"
 const Product = () => {
   return (
     <div className="mx-auto" >
-      <Navbar />
       <div className="px-6 mb-5 h-[374px]">
         <Hero
           badge="Our Products"
@@ -19,7 +18,6 @@ const Product = () => {
       </div>
       <ProductCatalog />
       <ShopOnlineSection/>
-      <Footer />
     </div>
   );
 };

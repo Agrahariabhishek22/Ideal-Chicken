@@ -8,11 +8,9 @@ import PhotoGallery from '../components/NewsComponents/PhotoGallery'
 const News = () => {
   return (
     <div>
-      <Navbar/>
       <PressHero/>
       <PressSection/>
       <PhotoGallery/>
-      <Footer/>
     </div>
   )
 }
