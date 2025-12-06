@@ -13,6 +13,8 @@ const MOCK_API_RESPONSE = [
     subItems: [
       { id: 21, label: "Breeders", href: "/verticals/breeders" },
       { id: 22, label: "Hatchery", href: "/verticals/hatchery" },
+      { id: 22, label: "Feedmill", href: "/verticals/feedmill" },
+      { id: 22, label: "Hatchery", href: "/verticals/hatchery" },
     ],
   },
   { id: 3, label: "PRODUCTS", href: "/products", hasDropdown: false },
@@ -20,11 +22,11 @@ const MOCK_API_RESPONSE = [
   {
     id: 5,
     label: "RESOURCES",
-    href: "/resources",
+    href: "/resources/blog",
     hasDropdown: true,
     subItems: [
       { id: 51, label: "Blog", href: "/resources/blog" },
-      { id: 52, label: "Recipes", href: "/resources/recipes" },
+      { id: 52, label: "News", href: "/resources/news" },
     ],
   },
 ];

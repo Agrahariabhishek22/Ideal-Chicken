@@ -6,9 +6,7 @@ import ContactSection from '../components/ContactUsComponents/ContactSection'
 const ContactUs = () => {
   return (
     <div>
-      <Navbar/>
       <ContactSection/>
-      <Footer/>
     </div>
   )
 }

@@ -8,7 +8,6 @@ import PartnerSection from "../components/CommonComponents/PartnerSection";
 const BusinessVertical = () => {
   return (
     <div>
-      <Navbar />
       <div className="w-full flex flex-col md:flex-row items-center justify-between px-6 mb-5 md:h-[245px] gap-4">
         <div className="md:w-[70%] w-full h-[245px]">
           <Hero
@@ -24,7 +23,6 @@ const BusinessVertical = () => {
       </div>
       <VerticalSection />
       <PartnerSection/>
-      <Footer />
     </div>
   );
 };

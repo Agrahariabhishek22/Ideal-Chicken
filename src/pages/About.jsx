@@ -12,7 +12,6 @@ import Navbar from '../components/CommonComponents/Navbar'
 const About = () => {
   return (
     <>
-    <Navbar/>
      <div >
       <div className='px-6 mb-5 h-[374px]'>
         <Hero
@@ -29,7 +28,6 @@ const About = () => {
       <CompetitiveEdge/>
       <QualityBanner/>
     </div>
-      <Footer/>
       </>
   )
 }
