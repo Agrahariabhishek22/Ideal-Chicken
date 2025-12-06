@@ -6,6 +6,8 @@ import HomePage from './pages/HomePage'
 import Footer from './components/CommonComponets/Footer'
 import StoreLocator from './pages/StoreLocator'
 import Blog from './pages/Blog'
+ 
+import BlogDetails from './pages/BlogDetails'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -18,6 +20,7 @@ function App() {
     <Route path='/' element={<HomePage/>} />
     <Route path='/locations' element={<StoreLocator/>} />
     <Route path='/resources/blog' element = {<Blog/>}/>
+    <Route path='/blog/:id' element={<BlogDetails/>} />
     </Routes>
     </BrowserRouter>
        <Footer/>
