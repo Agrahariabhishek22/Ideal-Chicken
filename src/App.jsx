@@ -1,8 +1,8 @@
 import React,{ useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Navbar from './components/CommonComponets/Navbar'
+import Navbar from './components/CommonComponents/Navbar'
 import HomePage from './pages/HomePage'
-import Footer from './components/CommonComponets/Footer'
+import Footer from './components/CommonComponents/Footer'
 import StoreLocator from './pages/StoreLocator'
 import Blog from './pages/Blog'
  
