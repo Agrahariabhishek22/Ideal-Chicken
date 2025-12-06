@@ -14,6 +14,7 @@ import Product from "./pages/Product";
 import BusinessVertical from "./pages/BusinessVertical";
 import ContactUs from "./pages/ContactUs";
 import News from "./pages/News";
+import BlogDetails from "./pages/BlogDetails";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/locations" element={<StoreLocator />} />
           <Route path="/resources/blog" element={<Blog />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/blog/:id" element={<BlogDetails />} />
         </Routes>
         <Footer />
       </Router>
