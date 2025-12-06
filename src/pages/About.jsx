@@ -14,11 +14,11 @@ const About = () => {
     <>
      <div >
       <div className='px-6 mb-5 h-[374px]'>
-        <Hero
-        badge="About us"
+        <Hero  
+        badge="About us"  
         title="A Legacy of Freshness, Trust, and Quality"
         subtitle="From farm to table, Ideal Chicken delivers premium, hygienic poultry sourced from trusted farms — combining tradition, care, and innovation in every cut."
-        img="/Left Block.png"
+        img="Left Block (2).png"
       />
       </div>
       <AboutSection/>

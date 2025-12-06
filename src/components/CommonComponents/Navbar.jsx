@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, use } from 'react';
 import { ChevronDown, ArrowUpRight, X } from 'lucide-react'; // Menu ko hata diya kyunki ab image use hogi
 import { motion, AnimatePresence } from 'framer-motion';
+import { useNavigate } from "react-router-dom";
+
 
 const MOCK_API_RESPONSE = [
   { id: 1, label: "ABOUT", href: "/about", hasDropdown: false },
@@ -36,6 +38,7 @@ const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [activeMobileSubmenu, setActiveMobileSubmenu] = useState(null);
 
+    const navigate=useNavigate();
     useEffect(() => {
         setNavItems(MOCK_API_RESPONSE);
         setIsLoading(false);
@@ -114,6 +117,7 @@ const Navbar = () => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         className="hidden sm:flex group items-center gap-3 bg-[#222222] text-white px-5 py-2.5 rounded-full shadow-md"
+                        onClick={()=>navigate('/contact-us')}
                     >
                         <span className="font-bold text-sm tracking-wide">Get in Touch</span>
                         <div className="bg-white rounded-full p-1 group-hover:rotate-45 transition">
@@ -140,7 +144,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* MOBILE MENU */}
+            {/* MOBILE MENU  get*/}
             <AnimatePresence>
                 {isMobileMenuOpen && (
                     <motion.div

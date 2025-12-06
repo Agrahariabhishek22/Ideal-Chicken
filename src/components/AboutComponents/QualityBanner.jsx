@@ -8,7 +8,7 @@ const QualityBanner = () => {
         className="relative w-full max-w-[1440px] mx-auto rounded-3xl  overflow-hidden min-h-[180px] md:h-[184px] flex items-center bg-cover bg-center bg-no-repeat"
         style={{
           // Yahan apni image ka path lagana (Image WITH badge & chicken, BUT WITHOUT text)
-          backgroundImage: "url('/src/assets/About us (1).png')",
+          backgroundImage: "url('/About us (1).png')",
           backgroundSize: " 100% 100%",
           backgroundPosition: "center",
         }}
@@ -32,7 +32,7 @@ const QualityBanner = () => {
           {/* Right Side: Partner Button */}
           {/* md:mt-0 ensures button stays right on desktop, centered/bottom on mobile if needed */}
           <div className="md:mr-30 w-50 h-30 flex items-center justify-center ">
-            <img src="/src/assets/fresh-farm-logo.png" className="object-fit" alt="" />
+            <img src="/fresh-farm-logo.png" className="object-fit" alt="" />
           </div>
           <div className="mt-4 md:mt-0 flex items-center justify-center">
             <button className="group bg-[#262626] hover:bg-black text-[#FEFEFE] px-6 py-2 rounded-full text-sm md:text-base font-bold transition-all duration-300 flex items-center gap-2 shadow-lg w-[200px] ">

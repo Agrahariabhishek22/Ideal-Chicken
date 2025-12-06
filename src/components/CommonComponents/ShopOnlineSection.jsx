@@ -57,9 +57,9 @@ const SHOP_DATA = {
   ),
   playStoreLink: "#",
   phoneNumber: "(0824) 2230507",
-  phoneImage: "/src/assets/Rectangle 3.png",
-  deliveryImage: "/src/assets/Rectangle 3 (1).png",
-  playStoreBtn: "/src/assets/playstore.png",
+  phoneImage: "/Rectangle 3.png",
+  deliveryImage: "/Rectangle 3 (1).png",
+  playStoreBtn: "/playstore.png",
 };
 
 const ShopOnlineSection = () => {

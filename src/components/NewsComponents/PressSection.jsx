@@ -19,7 +19,7 @@ const MOCK_API_RESPONSE = Array.from({ length: 30 }).map((_, i) => ({
     i % 2 === 0
       ? "Ideal Chicken Wins Sustainability Award 2024"
       : "Expansion Plans: New Outlets in Bangalore",
-  image: `/src/assets/Rectangle 2 (${i + 9}).png`,
+  image: `/Rectangle 2 (${i + 9}).png`,
   newsUrl: "/news/ideal-chicken-award-2024", // Internal or External Link
 }));
 

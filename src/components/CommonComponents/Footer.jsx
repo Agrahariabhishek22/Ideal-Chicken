@@ -37,7 +37,7 @@ export default function Footer() {
             <div className="flex items-start justify-center md:justify-start gap-4">
               <div className="w-28 h-20 flex items-center justify-center">
                 <img
-                  src="/src/assets/Ideal Chicken Logo.png"
+                  src="/Ideal Chicken Logo.png"
                   alt="Ideal Chicken Logo"
                   className="w-full h-auto select-none"
                 />
@@ -66,7 +66,7 @@ export default function Footer() {
               aria-label="Explore our products"
             >
               <span>Explore Our Products</span>
-              <img src="/src/assets/arrow.png" alt="" className="w-5 h-5" />
+              <img src="/arrow.png" alt="" className="w-5 h-5" />
             </motion.button>
           </motion.div>
 
@@ -158,7 +158,7 @@ export default function Footer() {
                 className="flex items-start gap-3"
                 whileHover={{ x: 4 }}
               >
-                <img src="/src/assets/phone.png" alt="phone" className="" />
+                <img src="/phone.png" alt="phone" className="" />
                 <div className="">
                   <div className="">(0824) 2230507</div>
                 </div>
@@ -169,7 +169,7 @@ export default function Footer() {
                 className="flex items-start gap-3"
                 whileHover={{ x: 4 }}
               >
-                <img src="/src/assets/mail.png" alt="mail" className="" />
+                <img src="/mail.png" alt="mail" className="" />
                 <span className="break-all flex-1">
                   anupamafeeds@idealchicken.in
                 </span>
@@ -180,7 +180,7 @@ export default function Footer() {
                 whileHover={{ x: 4 }}
               >
                 <img
-                  src="/src/assets/location.png"
+                  src="/location.png"
                   alt="location"
                   className="mt-2"
                 />
@@ -196,12 +196,12 @@ export default function Footer() {
                 <a href="#" className="flex justify-center ">
                   <div className="items-center flex  md:flex-col justify-center">
                     <img
-                      src="/src/assets/ios store.png"
+                      src="/ios store.png"
                       alt="Get it on Google Play"
                       className="h-10 transform transition-transform duration-200 hover:scale-105"
                     />
                     <img
-                      src="/src/assets/playstore.png"
+                      src="/playstore.png"
                       alt="Get it on Google Play"
                       className="h-15 transform transition-transform duration-200 hover:scale-105"
                     />
@@ -231,9 +231,9 @@ export default function Footer() {
                 aria-label="social links"
               >
                 {[
-                  { alt: "Instagram", src: "/src/assets/insta.png" },
-                  { alt: "Facebook", src: "/src/assets/facebook.png" },
-                  { alt: "LinkedIn", src: "/src/assets/linkedin.png" },
+                  { alt: "Instagram", src: "/insta.png" },
+                  { alt: "Facebook", src: "/facebook.png" },
+                  { alt: "LinkedIn", src: "/linkedin.png" },
                 ].map((s) => (
                   <motion.a
                     key={s.alt}
